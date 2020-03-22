@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+/* reset css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, span, a, img, blockquote, cite, table {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 300;
+}
+
+body {
+    background-color: var(--color-primary);
+    font-family: var(--font-family);
+    font-size: var(--font-16px);
+}
+
+img {
+    min-width: 100%;
+    display: block;
+}
+
+/* estilos globais */
+
+:root {
+    /* paleta de cores */
+    --color-primary: #201D6D;
+    --color-secondary: #F21E7D;
+    --color-primary-dark: #1B194D;
+    --color-secondary-light: #4441AA;
+    --color-black: #141320;
+    --color-gray: #CECDEA;
+    --color-light: #EBEBF4;
+    /* -- */
+    /* tamanhos de fontes e espaçamentos */
+    --font-16px: 1rem;
+    --font-18px: 1.125rem;
+    --font-24px: 1.5rem;
+    --font-32px: 2rem;
+    --font-40px: 2.5rem;
+    --font-48px: 3rem;
+    --font-56px: 3.5rem;
+    --font-64px: 4rem;
+    --font-72px: 4.5rem;
+    --font-80px: 5rem;
+    --font-88px: 5.5rem;
+    --font-96px: 6rem;
+    --font-104px: 6.5rem;
+    --font-112px: 7rem;
+    /* fonte padrão */
+    --font-family: 'Poppins', sans-serif;
+}
