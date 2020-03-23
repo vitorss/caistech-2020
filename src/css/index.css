@@ -1,3 +1,4 @@
+@import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 /* reset css */
 
@@ -33,6 +34,7 @@ body {
     --color-black: #141320;
     --color-gray: #CECDEA;
     --color-light: #EBEBF4;
+    --color-gradient: linear-gradient(127deg, rgba(242, 30, 125, 1) 25%, rgba(32, 29, 109, 1) 75%);
     /* -- */
     /* tamanhos de fontes e espaçamentos */
     --font-16px: 1rem;
@@ -53,78 +55,80 @@ body {
     --font-family: 'Poppins', sans-serif;
 }
 
-.container {
-    max-width: 1144px;
-    margin: 0 auto;
-    height: auto;
-}
-
-.btn {
-    background-image: linear-gradient( 111.8deg, rgba(242, 30, 125, 1) -0.5%, rgba(32, 29, 109, 1) 86.6%);
-    padding: 15px 20px;
-    border: none;
-    border-radius: 6px;
-    color: var(--color-light);
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-right: var(--font-32px);
-}
-
-.btn:hover {
-    background-color: var(--color-light);
-    color: var(--color-black);
-    transition: ease-in-out 0.3s;
-  }
-/* menu */
-
-.content-navigation {
-    width: 100%;
-    height: 100px;
+.buttons {
+    max-width: 350px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-.menu>ul {
+.btn-main {
+    background: var(--color-gradient);
+    color: var(--color-light);
+    padding: 10px 25px;
+    font-weight: 500;
+    font-size: var(--font-16px);
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: none;
+    transition: ease-in-out .3s;
+}
+
+.btn-main:hover {
+    background: var(--color-light);
+    transition: .3s;
+}
+
+/* estilos do site */
+
+/* estilo menu */
+
+.navigation {
+    position: absolute;
+    width: 100%;
+}
+
+.navbar-menu>ul {
     display: flex;
 }
 
-.menu>ul>li>a {
-    padding: 0 0 0 var(--font-32px);
+.navbar-menu ul li a {
     color: var(--color-light);
+    margin-left: var(--font-32px);
     font-weight: 600;
+    text-decoration: none;
+    padding: 15px 0;
 }
 
-.navigation {
-    width: 100%;
-    position: absolute;
+.navbar-menu ul li a:hover {
+    border-bottom: 2px solid var(--color-light);
 }
 
-
-/* wrapper */
+/* estilo wrapper */
 
 .wrapper {
     width: 100%;
+    height: auto;
     background-image: url('/src/assets/bg-hero.jpg');
     background-size: cover;
     background-position: center;
 }
 
-.content-box-wrapper {
+.content {
     width: 100%;
-    height: 780px;
+    height: 700px;
     display: flex;
     align-items: center;
 }
 
-.content-wrapper>h1 {
+.content-wrapper h1 {
     font-size: var(--font-80px);
-    color: var(--color-light);
     font-weight: 700;
-    line-height: 5.5rem;
+    color: var(--color-light);
 }
 
-.content-wrapper>p {
+.content-wrapper p {
+    font-size: var(--font-18px);
     color: var(--color-gray);
     padding: var(--font-32px) 0;
 }
