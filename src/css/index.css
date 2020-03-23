@@ -1,3 +1,4 @@
+@import "/node_modules/boxicons/css/boxicons.min.css";
 @import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 /* reset css */
@@ -69,14 +70,14 @@ body {
     font-weight: 500;
     font-size: var(--font-16px);
     text-transform: uppercase;
-    border-radius: 6px;
+    border-radius: 7px;
     border: none;
-    transition: ease-in-out .3s;
+    transition: all .4s ease-in-out;
 }
 
 .btn-main:hover {
     background: var(--color-light);
-    transition: .3s;
+    transition: all .4s ease-in-out;
 }
 
 /* estilos do site */
@@ -88,7 +89,7 @@ body {
     width: 100%;
 }
 
-.navbar-menu>ul {
+.navbar-menu ul {
     display: flex;
 }
 
@@ -114,21 +115,102 @@ body {
     background-position: center;
 }
 
-.content {
+.content-area {
     width: 100%;
     height: 700px;
     display: flex;
     align-items: center;
+    padding: 0 15px;
 }
 
-.content-wrapper h1 {
+.content-area-wrapper h1 {
     font-size: var(--font-80px);
     font-weight: 700;
     color: var(--color-light);
 }
 
-.content-wrapper p {
+.content-area-wrapper p {
     font-size: var(--font-18px);
     color: var(--color-gray);
     padding: var(--font-32px) 0;
+}
+
+/* event counter */
+
+.content-event {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--font-56px) 15px;
+    border-bottom: 1px solid var(--color-primary-dark);
+}
+
+.event-counter-info h2 {
+    font-size: var(--font-48px);
+    font-weight: 600;
+    color: var(--color-light);
+}
+
+.event-counter-info h5 {
+    font-size: var(--font-24px);
+    color: var(--color-gray);
+    padding: 8px 0;
+}
+
+.event-counter-info p {
+    font-size: var(--font-16px);
+    color: var(--color-gray);
+}
+
+.event-counter-info p i {
+    margin-right: 5px;
+    font-size: var(--font-18px);
+}
+
+.event-counter-timer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event-counter-timer h3 {
+    font-size: var(--font-48px);
+    color: var(--color-light);
+    font-weight: 600;
+    padding: 0 var(--font-32px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-counter-timer h3 span {
+    font-size: var(--font-16px);
+    font-weight: 200;
+}
+
+/* about */
+
+.about {
+    padding: var(--font-96px) 15px;
+}
+
+.about-img img {
+    border-radius: 7px;
+}
+
+.about-info {
+    padding: var(--font-56px) 0;
+}
+
+.about-info h2 {
+    font-size: var(--font-48px);
+    font-weight: 600;
+    color: var(--color-light);
+    padding-bottom: var(--font-32px);
+}
+
+.about-info p {
+    font-size: var(--font-16px);
+    color: var(--color-gray);
+    line-height: var(--font-32px);
+    margin-bottom: var(--font-32px);
 }
