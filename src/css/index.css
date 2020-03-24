@@ -64,7 +64,7 @@ body {
 }
 
 .btn-main {
-    background: var(--color-gradient);
+    background: var(--color-primary);
     color: var(--color-light);
     padding: 10px 25px;
     font-weight: 500;
@@ -76,7 +76,8 @@ body {
 }
 
 .btn-main:hover {
-    background: var(--color-light);
+    background: var(--color-primary-dark);
+    color: var(--color-light);
     transition: all .2s ease-in-out;
 }
 
@@ -182,11 +183,14 @@ body {
 .counter-box .time {
     font-size: var(--font-48px);
     color: var(--color-light);
-    font-weight: 600;
     padding: 0 var(--font-32px);
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+.counter-box .time span {
+    font-weight: 600;
 }
 
 .counter-box .text {
