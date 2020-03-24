@@ -13,7 +13,7 @@
 
 <body>
     <main>
-        <!-- navigation bar -->
+        <!-- section navigation bar -->
         <section class="navigation">
             <div class="container">
                 <nav class="navbar">
@@ -32,7 +32,7 @@
                 </nav>
             </div>
         </section>
-        <!-- wrapper -->
+        <!-- section wrapper -->
         <header class="wrapper">
             <div class="container">
                 <div class="content-area">
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </header>
-        <!-- event counter -->
+        <!-- section event counter -->
         <section class="event-counter">
             <div class="container">
                 <div class="content-event">
@@ -57,14 +57,27 @@
                         <p><i class="bx bx-map"></i>Floriano, Piauí, Brasil</p>
                     </div>
                     <div class="event-counter-timer">
-                        <h3>00<span>Dias</span></h3>
-                        <h3>00<span>Horas</span></h3>
-                        <h3>00<span>Minutos</span></h3>
-                        <h3>00<span>Segundos</span></h3>
+                        <div class="counter-box">
+                            <h3 class="time"><span id="days">00</span></h3>
+                            <span class="text">Dias</span>
+                        </div>
+                        <div class="counter-box">
+                            <h3 class="time" ><span id="hours">00</span></h3>
+                            <span class="text">Horas</span>
+                        </div>
+                        <div class="counter-box">
+                            <h3 class="time"><span id="minutes">00</span></h3>
+                            <span class="text">Minutos</span>
+                        </div>
+                        <div class="counter-box">
+                            <h3 class="time"><span id="seconds">00</span></h3>
+                            <span class="text">Segundos</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- section about -->
         <section class="about">
             <div class="container">
                 <div class="content-about">
@@ -94,6 +107,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="./src/js/countdown.js"></script>
 </body>
 
 </html>

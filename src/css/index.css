@@ -72,12 +72,12 @@ body {
     text-transform: uppercase;
     border-radius: 7px;
     border: none;
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .btn-main:hover {
     background: var(--color-light);
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 /* estilos do site */
@@ -170,9 +170,16 @@ body {
 .event-counter-timer {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
-.event-counter-timer h3 {
+.counter-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter-box .time {
     font-size: var(--font-48px);
     color: var(--color-light);
     font-weight: 600;
@@ -182,9 +189,10 @@ body {
     flex-direction: column;
 }
 
-.event-counter-timer h3 span {
+.counter-box .text {
     font-size: var(--font-16px);
     font-weight: 200;
+    color: var(--color-light    );
 }
 
 /* about */
