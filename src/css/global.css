@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, span, a, img, blockquote, cite, table {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-primary);
+    font-family: var(--font-family);
+    font-size: var(--font-16px);
+}
+
+/* estilos globais */
+
+:root {
+    /* paleta de cores */
+    --color-primary: #201D6D;
+    --color-secondary: #F21E7D;
+    --color-primary-dark: #1B194D;
+    --color-primary-light: #4441AA;
+    --color-black: #141320;
+    --color-gray: #CECDEA;
+    --color-light: #EBEBF4;
+    --color-gradient: linear-gradient(127deg, rgba(242, 30, 125, 1) 25%, rgba(32, 29, 109, 1) 75%);
+    /* -- */
+    /* tamanhos de fontes e espaçamentos */
+    --font-16px: 1rem;
+    --font-18px: 1.125rem;
+    --font-24px: 1.5rem;
+    --font-32px: 2rem;
+    --font-40px: 2.5rem;
+    --font-48px: 3rem;
+    --font-56px: 3.5rem;
+    --font-64px: 4rem;
+    --font-72px: 4.5rem;
+    --font-80px: 5rem;
+    --font-88px: 5.5rem;
+    --font-96px: 6rem;
+    --font-104px: 6.5rem;
+    --font-112px: 7rem;
+    /* fonte padrão */
+    --font-family: 'Poppins', sans-serif;
+}
+
+.buttons {
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn-main {
+    background: var(--color-primary);
+    color: var(--color-light);
+    padding: 10px 25px;
+    font-weight: 500;
+    font-size: var(--font-16px);
+    text-transform: uppercase;
+    border-radius: 7px;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+.btn-main:hover {
+    background: var(--color-primary-dark);
+    color: var(--color-light);
+    transition: all .2s ease-in-out;
+}
+
+.buttons a {
+    color: var(--color-light);
+}
+.buttons a:hover {
+    color: var(--color-light);
+}
+
+.padding-bottom-56px {
+    padding-bottom: 56px;
+}

@@ -1,0 +1,26 @@
+.navigation {
+    position: absolute;
+    width: 100%;
+}
+
+.navbar {
+    padding: var(--font-32px) var(--font-16px);
+}
+
+.navbar-menu ul {
+    display: flex;
+}
+
+.navbar-menu ul li a {
+    color: var(--color-light);
+    margin-left: var(--font-32px);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 0;
+    transition: .3s;
+}
+
+.navbar-menu ul li a:hover {
+    color: var(--color-primary-light);
+    transition: .3s;
+}

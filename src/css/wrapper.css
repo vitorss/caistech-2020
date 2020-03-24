@@ -1,0 +1,27 @@
+.wrapper {
+    width: 100%;
+    height: auto;
+    background-image: url('/src/assets/bg-hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content-area {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.content-area-wrapper h1 {
+    font-size: var(--font-80px);
+    font-weight: 700;
+    color: var(--color-light);
+}
+
+.content-area-wrapper p {
+    font-size: var(--font-18px);
+    color: var(--color-gray);
+    padding: var(--font-32px) 0;
+}
