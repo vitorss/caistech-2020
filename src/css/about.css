@@ -23,3 +23,10 @@
     line-height: var(--font-32px);
     margin-bottom: var(--font-32px);
 }
+
+@media screen and (max-width: 576px) {
+    .about-info h2 {
+        margin-top: var(--font-32px);
+        font-size: var(--font-32px);
+    }
+}

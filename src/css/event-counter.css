@@ -57,5 +57,38 @@
 .counter-box .text {
     font-size: var(--font-16px);
     font-weight: 200;
-    color: var(--color-light    );
+    color: var(--color-light);
+}
+
+@media screen and (max-width: 576px) {
+    .content-event {
+        display: block;
+    }
+    .event-counter-timer {
+        flex-direction: column;
+    }
+    .event-counter-info h2 {
+        font-size: var(--font-32px);
+    }
+    .counter-box .time {
+        font-size: var(--font-24px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .counter-box {
+        margin-top: var(--font-40px);
+    }
+}
+
+@media screen and (max-width: 768px) and (max-width: 992px){
+    .counter-box {
+        margin-top: var(--font-40px);
+    }
+}
+
+@media screen and (max-width: 992px){
+    .counter-box {
+        margin-top: var(--font-40px);
+    }
 }

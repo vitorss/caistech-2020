@@ -27,3 +27,24 @@
     color: var(--color-primary-light);
     transition: .3s;
 }
+
+.menu-toggle {
+    cursor: pointer;
+    display: none;
+}
+
+.menu-toggle div {
+    width: var(--font-32px);
+    height: 3px;
+    margin: 5px 0;
+    background-color: var(--color-light);
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-menu {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}

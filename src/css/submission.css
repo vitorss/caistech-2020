@@ -43,3 +43,9 @@
     padding-bottom: 2px;
     list-style: square;
 }
+
+@media screen and (max-width: 576px) {
+    .title-submission h2 {
+        font-size: var(--font-32px);
+    }
+}

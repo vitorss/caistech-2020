@@ -18,10 +18,29 @@
     font-size: var(--font-80px);
     font-weight: 700;
     color: var(--color-light);
+    max-width: 700px;
 }
 
 .content-area-wrapper p {
     font-size: var(--font-18px);
     color: var(--color-gray);
     padding: var(--font-32px) 0;
+}
+
+@media screen and (max-width: 576px) {
+    .content-area-wrapper h1 {
+        font-size: var(--font-48px);
+        text-align: center;
+    }
+    .content-area-wrapper p {
+        text-align: center;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .buttons .btn-main {
+        margin: 8px 0;
+    }
 }

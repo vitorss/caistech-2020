@@ -90,3 +90,9 @@
     background: var(--color-gradient);
     margin-top: var(--font-32px);
 }
+
+@media screen and (max-width: 576px) {
+    .title-speakers h2 {
+        font-size: var(--font-32px);
+    }
+}
