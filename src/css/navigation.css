@@ -5,6 +5,9 @@
 
 .navbar {
     padding: var(--font-32px) var(--font-16px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar-menu ul {

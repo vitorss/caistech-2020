@@ -30,7 +30,8 @@ body {
     --color-black: #141320;
     --color-gray: #CECDEA;
     --color-light: #EBEBF4;
-    --color-gradient: linear-gradient(127deg, rgba(242, 30, 125, 1) 25%, rgba(32, 29, 109, 1) 75%);
+    --color-gradient: linear-gradient(101.7deg, #F21E7D -42.88%, #201D6D 112.22%);
+    /* --color-gradient: linear-gradient(127deg, rgba(242, 30, 125, 1) 25%, rgba(32, 29, 109, 1) 75%); */
     /* -- */
     /* tamanhos de fontes e espaçamentos */
     --font-16px: 1rem;
@@ -59,7 +60,7 @@ body {
 }
 
 .btn-main {
-    background: var(--color-primary);
+    background: var(--color-gradient);
     color: var(--color-light);
     padding: 10px 25px;
     font-weight: 500;
@@ -71,7 +72,7 @@ body {
 }
 
 .btn-main:hover {
-    background: var(--color-primary-dark);
+    background: var(--color-primary);
     color: var(--color-light);
     transition: all .2s ease-in-out;
 }
@@ -86,4 +87,9 @@ body {
 
 .padding-bottom-56px {
     padding-bottom: 56px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }

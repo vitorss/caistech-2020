@@ -17,8 +17,6 @@
   },
   "homepage": "https://github.com/vitorss/caistech-2020#readme",
   "dependencies": {
-    "bootstrap": "^4.4.1",
-    "boxicons": "^2.0.5",
-    "bulma": "^0.8.0"
+    "boxicons": "^2.0.5"
   }
 }

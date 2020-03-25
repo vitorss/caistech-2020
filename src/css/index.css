@@ -1,5 +1,6 @@
+@import "/src/css/bootstrap.min.css";
+@import "/src/css/bootstrap-grid.min.css";
 @import "/node_modules/boxicons/css/boxicons.min.css";
-@import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 @import "/src/css/global.css";
 @import "/src/css/navigation.css";
@@ -7,3 +8,5 @@
 @import "/src/css/event-counter.css";
 @import "/src/css/about.css";
 @import "/src/css/speakers.css";
+@import "/src/css/submission.css";
+@import "/src/css/contact.css";

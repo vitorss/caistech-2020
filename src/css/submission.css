@@ -1,0 +1,45 @@
+.submission {
+    background: var(--color-black);
+}
+
+.content-submission {
+    padding: var(--font-96px) 15px;
+}
+
+.title-submission h2 {
+    padding: 0 15px var(--font-96px) 15px;
+    font-size: var(--font-48px);
+    font-weight: 600;
+    color: var(--color-light);
+}
+
+.title-submission h2::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    background: var(--color-gradient);
+    margin-top: var(--font-32px);
+}
+
+.guidelines ul li {
+    font-size: var(--font-16px);
+    color: var(--color-gray);
+    padding-bottom: var(--font-24px);
+    list-style: square;
+}
+
+.thematic-area h3 {
+    font-size: var(--font-18px);
+    color: var(--color-light);
+    font-weight: 600;
+    margin-bottom: var(--font-24px);
+}
+
+.thematic-area ul li {
+    font-size: var(--font-16px);
+    color: var(--color-gray);
+    padding-bottom: 2px;
+    list-style: square;
+}
