@@ -1,3 +1,7 @@
+.questions {
+    background: var(--color-light);
+}
+
 .content-questions {
     padding: var(--font-96px) 15px;
 }
@@ -6,7 +10,7 @@
     padding: 0 15px var(--font-96px) 15px;
     font-size: var(--font-48px);
     font-weight: 600;
-    color: var(--color-light);
+    color: var(--color-black);
 }
 
 .title-questions h2::after {
@@ -15,14 +19,14 @@
     position: absolute;
     width: 150px;
     height: 5px;
-    background: var(--color-secondary);
+    background: var(--color-gradient);
     margin-top: var(--font-32px);
 }
 
 .collapsible {
     font-size: var(--font-18px);
     font-weight: bold;
-    color: var(--color-light);
+    color: var(--color-black);
     background: transparent;
     width: 100%;
     border: none;
@@ -31,15 +35,15 @@
 }
 
 .collapsible:after {
-    content: '\02795';
+    content: url('/src/assets/bxs-right-arrow-alt.svg');
     font-size: var(--font-16px);
-    color: white;
+    color: var(--color-secondary);
     float: left;
     margin-right: var(--font-16px);
 }
 
 .active:after {
-    content: "\2796";
+    content: url('/src/assets/bxs-down-arrow-alt.svg');
 }
 
 .collapsible:focus {
@@ -47,7 +51,7 @@
 }
 
 .active, .collapsible:hover {
-    color: var(--color-gray);
+    color: var(--color-secondary);
 }
 
 .box-questions {
@@ -63,6 +67,6 @@
 
 .box-answers p {
     font-size: var(--font-16px);
-    color: var(--color-gray);
-    padding: var(--font-16px) var(--font-16px);
+    color: var(--color-secondary);
+    padding: var(--font-16px) 26px;
 }

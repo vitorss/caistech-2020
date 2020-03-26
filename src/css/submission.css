@@ -19,7 +19,7 @@
     position: absolute;
     width: 150px;
     height: 5px;
-    background: var(--color-secondary);
+    background: var(--color-gradient);
     margin-top: var(--font-32px);
 }
 

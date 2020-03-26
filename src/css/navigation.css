@@ -24,7 +24,7 @@
 }
 
 .navbar-menu ul li a:hover {
-    color: var(--color-primary-light);
+    color: var(--color-primary-middle);
     transition: .3s;
 }
 

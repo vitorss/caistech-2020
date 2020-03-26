@@ -1,3 +1,7 @@
+.event-counter {
+    background: var(--color-black);
+}
+
 .content-event {
     width: 100%;
     display: flex;

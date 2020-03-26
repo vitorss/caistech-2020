@@ -1,4 +1,8 @@
 .about {
+    background: var(--color-light);
+}
+
+.content-about {
     padding: var(--font-96px) 15px;
 }
 
@@ -13,13 +17,13 @@
 .about-info h2 {
     font-size: var(--font-48px);
     font-weight: 600;
-    color: var(--color-light);
+    color: var(--color-black);
     padding-bottom: var(--font-32px);
 }
 
 .about-info p {
     font-size: var(--font-18px);
-    color: var(--color-gray);
+    color: var(--color-secondary);
     line-height: var(--font-32px);
     margin-bottom: var(--font-32px);
 }

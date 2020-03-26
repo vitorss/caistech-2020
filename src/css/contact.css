@@ -1,3 +1,7 @@
+.contact {
+    background: var(--color-black);
+}
+
 .content-contact {
     padding: var(--font-96px) 15px;
 }
@@ -15,7 +19,7 @@
     position: absolute;
     width: 150px;
     height: 5px;
-    background: var(--color-secondary);
+    background: var(--color-gradient);
     margin-top: var(--font-32px);
 }
 
@@ -50,42 +54,36 @@
 }
 
 .contact-form {
-    background: var(--color-primary-dark);
+    background: var(--color-light);
     padding: var(--font-64px) var(--font-32px);
     border-radius: 6px;
 }
 
-.contact-form input {
-    background-color: var(--color-primary-dark);
-    border: 1px solid var(--color-primary-light);
-}
-
 .contact-form input::placeholder {
-    color: var(--color-light);
+    color: var(--color-secondary);
 }
 
 .contact-form textarea {
-    background-color: var(--color-primary-dark);
-    border: 1px solid var(--color-primary-light);
+    background-color: var(--color-light);
 }
 
 .contact-form textarea::placeholder {
-    color: var(--color-light);
+    color: var(--color-secondary);
 }
 
 .contact-form input[type=text] {
-    background-color: var(--color-primary-dark);
-    color: var(--color-light);
+    background-color: var(--color-light);
+    color: var(--color-secondary);
 }
 
 .contact-form input[type=email] {
-    background-color: var(--color-primary-dark);
-    color: var(--color-light);
+    background-color: var(--color-light);
+    color: var(--color-secondary);
 }
 
 .contact-form textarea:focus {
-    background-color: var(--color-primary-dark);
-    color: var(--color-light);
+    background-color: var(--color-light);
+    color: var(--color-secondary);
 }
 
 @media screen and (max-width: 576px) {

@@ -23,14 +23,15 @@ body {
 
 :root {
     /* paleta de cores */
-    --color-primary: #201D6D;
-    --color-secondary: #F21E7D;
-    --color-primary-dark: #1B194D;
-    --color-primary-light: #4441AA;
-    --color-black: #141320;
+    --color-primary: #0C0032;
+    --color-secondary: #282828;
+    --color-primary-middle:#230090;
+    --color-primary-dark: #1A0061;
+    --color-primary-light: #3500D4;
+    --color-black: #000000;
     --color-gray: #CECDEA;
     --color-light: #EBEBF4;
-    --color-gradient: linear-gradient(101.7deg, #F21E7D -42.88%, #201D6D 112.22%);
+    --color-gradient: linear-gradient(126deg, rgba(45,0,178,1) 25%, rgba(26,0,97,1) 75%);
     /* --color-gradient: linear-gradient(127deg, rgba(242, 30, 125, 1) 25%, rgba(32, 29, 109, 1) 75%); */
     /* -- */
     /* tamanhos de fontes e espaçamentos */
@@ -60,7 +61,7 @@ body {
 }
 
 .btn-main {
-    background: var(--color-gradient);
+    background: var(--color-primary-light);
     color: var(--color-light);
     padding: 10px 25px;
     font-weight: 500;
@@ -68,13 +69,12 @@ body {
     text-transform: uppercase;
     border-radius: 7px;
     border: none;
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .btn-main:hover {
-    background: var(--color-primary);
-    color: var(--color-light);
-    transition: all .2s ease-in-out;
+    background: var(--color-primary-dark);
+    transition: all .3s ease-in-out;
 }
 
 .btn-tab {
@@ -85,13 +85,30 @@ body {
     font-size: var(--font-16px);
     border-radius: 7px;
     border: none;
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .btn-tab:hover {
     background: var(--color-primary);
     color: var(--color-light);
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-contact {
+    background: var(--color-secondary);
+    color: var(--color-light);
+    padding: 10px 25px;
+    font-weight: 500;
+    font-size: var(--font-16px);
+    text-transform: uppercase;
+    border-radius: 7px;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.btn-contact:hover {
+    background: var(--color-black);
+    color: var(--color-light);
 }
 
 .buttons a {
@@ -109,4 +126,14 @@ body {
 img {
     display: block;
     max-width: 100%;
+}
+
+#particles-js {
+    position: absolute;
+    background: var(--color-black);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    width: 100%;
+    height: 700px;
 }
