@@ -15,7 +15,7 @@
     position: absolute;
     width: 150px;
     height: 5px;
-    background: var(--color-gradient);
+    background: var(--color-secondary);
     margin-top: var(--font-32px);
 }
 
@@ -77,11 +77,22 @@
     background-color: var(--color-primary-dark);
     color: var(--color-light);
 }
+
 .contact-form input[type=email] {
     background-color: var(--color-primary-dark);
     color: var(--color-light);
 }
+
 .contact-form textarea:focus {
     background-color: var(--color-primary-dark);
     color: var(--color-light);
+}
+
+@media screen and (max-width: 576px) {
+    .title-contact h2 {
+        font-size: var(--font-32px);
+    }
+    .social-contact-icons {
+        margin-bottom: var(--font-32px);
+    }
 }

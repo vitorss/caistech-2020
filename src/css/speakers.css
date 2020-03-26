@@ -87,7 +87,7 @@
     position: absolute;
     width: 150px;
     height: 5px;
-    background: var(--color-gradient);
+    background: var(--color-secondary);
     margin-top: var(--font-32px);
 }
 

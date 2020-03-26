@@ -77,6 +77,23 @@ body {
     transition: all .2s ease-in-out;
 }
 
+.btn-tab {
+    background: var(--color-primary-dark);
+    color: var(--color-light);
+    padding: 10px 25px;
+    font-weight: 500;
+    font-size: var(--font-16px);
+    border-radius: 7px;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+.btn-tab:hover {
+    background: var(--color-primary);
+    color: var(--color-light);
+    transition: all .2s ease-in-out;
+}
+
 .buttons a {
     color: var(--color-light);
 }

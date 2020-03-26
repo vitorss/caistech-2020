@@ -1,0 +1,23 @@
+.content-programs {
+    padding: var(--font-96px) 15px;
+}
+
+.title-programs h2 {
+    padding: 0 15px var(--font-96px) 15px;
+    font-size: var(--font-48px);
+    font-weight: 600;
+    color: var(--color-light);
+}
+
+.title-programs h2::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    background: var(--color-secondary);
+    margin-top: var(--font-32px);
+}
+
+
+

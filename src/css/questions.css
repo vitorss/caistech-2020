@@ -1,0 +1,68 @@
+.content-questions {
+    padding: var(--font-96px) 15px;
+}
+
+.title-questions h2 {
+    padding: 0 15px var(--font-96px) 15px;
+    font-size: var(--font-48px);
+    font-weight: 600;
+    color: var(--color-light);
+}
+
+.title-questions h2::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    background: var(--color-secondary);
+    margin-top: var(--font-32px);
+}
+
+.collapsible {
+    font-size: var(--font-18px);
+    font-weight: bold;
+    color: var(--color-light);
+    background: transparent;
+    width: 100%;
+    border: none;
+    text-align: left;
+    transition: 0.2s ease-out;
+}
+
+.collapsible:after {
+    content: '\02795';
+    font-size: var(--font-16px);
+    color: white;
+    float: left;
+    margin-right: var(--font-16px);
+}
+
+.active:after {
+    content: "\2796";
+}
+
+.collapsible:focus {
+    outline: none;
+}
+
+.active, .collapsible:hover {
+    color: var(--color-gray);
+}
+
+.box-questions {
+    padding-bottom: var(--font-24px);
+}
+
+.box-answers {
+    padding: 0 16px;
+    display: none;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+
+.box-answers p {
+    font-size: var(--font-16px);
+    color: var(--color-gray);
+    padding: var(--font-16px) var(--font-16px);
+}
