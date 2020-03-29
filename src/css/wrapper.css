@@ -47,6 +47,9 @@
         font-size: var(--font-48px);
         text-align: center;
     }
+    .content-area-wrapper h1::before {
+        content: none;
+    }
     .content-area-wrapper p {
         text-align: center;
     }

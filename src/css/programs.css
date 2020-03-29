@@ -2,10 +2,6 @@
     background: var(--color-light);
 }
 
-.content-programs {
-    padding: var(--font-96px) 15px;
-}
-
 .title-programs h2 {
     padding: 0 15px var(--font-96px) 15px;
     font-size: var(--font-48px);
@@ -23,5 +19,217 @@
     margin-top: var(--font-32px);
 }
 
+.tabs {
+    width: 100%;
+}
 
+.content-tabs {
+    width: 100%;
+    padding: var(--font-96px) 15px;
+}
 
+.box-tabs {
+    width: 100%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-links {
+    width: 32%;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 7px;
+    border-collapse: collapse;
+    cursor: pointer;
+    margin: 0px;
+    transition: .3s;
+    background: var(--color-secondary);
+    color: var(--color-light);
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-links:hover {
+    background: var(--color-gray);
+    transition: .3s;
+    color: var(--color-secondary);
+}
+
+.active {
+    background: var(--color-gray);
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.day-box {
+    width: 100%;
+    border: 1px solid var(--color-gray);
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    margin: 32px 0px 16px 0px;
+    transition: .5s;
+}
+
+.day-box:hover {
+    background: var(--color-secondary);
+    transition: .3s;
+    color: var(--color-light);
+}
+
+.profile-box {
+    width: 280px;
+    border-right: 1px solid var(--color-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-box h3 {
+    text-transform: uppercase;
+    font-size: var(--font-16px);
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 15px 20px;
+}
+
+.info-box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-box h3 {
+    font-size: var(--font-24px);
+    margin-bottom: 12px;
+}
+
+.info-box span {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width: 576px) {
+    .title-programs h2 {
+        font-size: var(--font-32px);
+    }
+    .box-tabs {
+        display: flex;
+        flex-direction: column;
+    }
+    .tab-links {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .day-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-box {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--color-gray);
+    }
+    .info-box {
+        width: 100%;
+        text-align: center;
+    }
+    .info-box span {
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    .info-box h3 {
+        font-size: var(--font-18px);
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .title-programs h2 {
+        font-size: var(--font-32px);
+    }
+    .box-tabs {
+        display: flex;
+        flex-direction: column;
+    }
+    .tab-links {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .day-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-box {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--color-gray);
+    }
+    .info-box {
+        width: 100%;
+        text-align: center;
+    }
+    .info-box span {
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    .info-box h3 {
+        font-size: var(--font-18px);
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .profile-box {
+        width: 100%;
+        border-right: 1px solid var(--color-gray);
+    }
+    .avatar img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+}

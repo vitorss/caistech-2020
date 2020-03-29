@@ -34,7 +34,7 @@
     transition: 0.2s ease-out;
 }
 
-.collapsible:after {
+.collapsible::after {
     content: url('/src/assets/bxs-right-arrow-alt.svg');
     font-size: var(--font-16px);
     color: var(--color-secondary);
@@ -42,7 +42,7 @@
     margin-right: var(--font-16px);
 }
 
-.active:after {
+.box-questions .active::after {
     content: url('/src/assets/bxs-down-arrow-alt.svg');
 }
 
@@ -62,11 +62,53 @@
     padding: 0 16px;
     display: none;
     overflow: hidden;
-    transition: 0.3s ease-out;
 }
 
 .box-answers p {
     font-size: var(--font-16px);
     color: var(--color-secondary);
     padding: var(--font-16px) 26px;
+    -webkit-animation-name: fadeEffect;
+    animation-name: fadeEffect;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .title-questions h2 {
+        font-size: var(--font-32px);
+    }
+    .collapsible {
+        font-size: var(--font-16px);
+    }
+    .collapsible::after {
+        content: none;
+    }
+    .box-questions .active:after {
+        content: none;
+    }
+    .box-answers {
+        padding: 0;
+    }
+    .box-answers p {
+        font-size: 16px;
+        padding: 16px;
+    }
 }

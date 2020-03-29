@@ -94,3 +94,15 @@
         margin-bottom: var(--font-32px);
     }
 }
+
+@media (max-width: 720px) {
+    .social-contact-icons {
+        margin-bottom: var(--font-32px);
+    }
+}
+
+@media (max-width: 960px) {
+    .social-contact-icons {
+        margin-bottom: var(--font-32px);
+    }
+}
