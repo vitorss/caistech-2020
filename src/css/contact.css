@@ -41,7 +41,7 @@
 }
 
 .social-contact-icons li a i {
-    padding: 0 12px 0 0;
+    padding: 0 var(--font-32px) 0 0;
     text-decoration: none;
     color: var(--color-light);
     font-size: var(--font-32px);
@@ -49,7 +49,7 @@
 }
 
 .social-contact-icons li a i:hover {
-    color: var(--color-secondary);
+    color: var(--color-primary-light);
     transition: .3s;
 }
 
@@ -104,5 +104,8 @@
 @media (max-width: 960px) {
     .social-contact-icons {
         margin-bottom: var(--font-32px);
+    }
+    .social-contact-icons li a i {
+        padding: 0 12px 0 0;
     }
 }
