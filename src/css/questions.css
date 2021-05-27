@@ -1,5 +1,5 @@
 .questions {
-    background: var(--color-light);
+    background: var(--color-black);
 }
 
 .content-questions {
@@ -9,8 +9,8 @@
 .title-questions h2 {
     padding: 0 15px var(--font-96px) 15px;
     font-size: var(--font-48px);
-    font-weight: 600;
-    color: var(--color-black);
+    font-weight: 800;
+    color: var(--color-light);
 }
 
 .title-questions h2::after {
@@ -19,14 +19,14 @@
     position: absolute;
     width: 150px;
     height: 5px;
-    background: var(--color-gradient);
+    background: var(--color-pink);
     margin-top: var(--font-32px);
 }
 
 .collapsible {
     font-size: var(--font-18px);
-    font-weight: bold;
-    color: var(--color-black);
+    font-weight: 500;
+    color: var(--color-light);
     background: transparent;
     width: 100%;
     border: none;
@@ -35,15 +35,16 @@
 }
 
 .collapsible::after {
-    content: url('/src/assets/bxs-right-arrow-alt.svg');
+    content: url('/src/assets/right-arrow-alt-solid-24.png');
     font-size: var(--font-16px);
     color: var(--color-secondary);
     float: left;
     margin-right: var(--font-16px);
+    transition: all .2s;
 }
 
 .box-questions .active::after {
-    content: url('/src/assets/bxs-down-arrow-alt.svg');
+    content: url('/src/assets/down-arrow-alt-solid-24.png');
 }
 
 .collapsible:focus {
@@ -51,7 +52,7 @@
 }
 
 .active, .collapsible:hover {
-    color: var(--color-secondary);
+    color: var(--color-pink);
 }
 
 .box-questions {
@@ -66,11 +67,12 @@
 
 .box-answers p {
     font-size: var(--font-16px);
-    color: var(--color-secondary);
+    color: var(--color-light);
     padding: var(--font-16px) 26px;
     -webkit-animation-name: fadeEffect;
     animation-name: fadeEffect;
     animation-duration: 1s;
+    font-family: 'Karla', sans-serif;
 }
 
 @-webkit-keyframes fadeEffect {

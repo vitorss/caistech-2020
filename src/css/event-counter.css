@@ -13,7 +13,7 @@
 
 .event-counter-info h2 {
     font-size: var(--font-48px);
-    font-weight: 600;
+    font-weight: 800;
     color: var(--color-light);
 }
 
@@ -21,16 +21,20 @@
     font-size: var(--font-24px);
     color: var(--color-gray);
     padding: 8px 0;
+    font-family: 'Karla', sans-serif;
 }
 
 .event-counter-info p {
-    font-size: var(--font-16px);
+    display: flex;
+    align-items: center;
+    font-size: var(--font-18px);
     color: var(--color-gray);
+    font-family: 'Karla', sans-serif;
 }
 
 .event-counter-info p i {
     margin-right: 5px;
-    font-size: var(--font-18px);
+    font-size: var(--font-24px);
 }
 
 .event-counter-timer {
@@ -55,7 +59,7 @@
 }
 
 .counter-box .time span {
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .counter-box .text {

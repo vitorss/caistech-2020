@@ -16,16 +16,27 @@
 
 .about-info h2 {
     font-size: var(--font-48px);
-    font-weight: 600;
+    font-weight: 800;
     color: var(--color-black);
-    padding-bottom: var(--font-32px);
+    padding: 0 0px var(--font-80px) 0px;
+}
+
+.about-info h2::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    background: var(--color-lightblue);
+    margin-top: var(--font-32px);
 }
 
 .about-info p {
     font-size: var(--font-18px);
     color: var(--color-secondary);
-    line-height: var(--font-32px);
-    margin-bottom: var(--font-32px);
+    line-height: var(--font-24px);
+    margin-bottom: var(--font-16px);
+    font-family: 'Karla', sans-serif;
 }
 
 @media screen and (max-width: 576px) {

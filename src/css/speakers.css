@@ -6,6 +6,23 @@
     padding: var(--font-96px) 15px;
 }
 
+.title-speakers h2 {
+    padding: 0 15px var(--font-96px) 15px;
+    font-size: var(--font-48px);
+    font-weight: 800;
+    color: var(--color-light);
+}
+
+.title-speakers h2::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    background: var(--color-pink);
+    margin-top: var(--font-32px);
+}
+
 .card-img-box {
     width: 250px;
     position: relative;
@@ -72,23 +89,7 @@
     font-size: var(--font-16px);
     color: var(--color-gray);
     padding-top: 8px;
-}
-
-.title-speakers h2 {
-    padding: 0 15px var(--font-96px) 15px;
-    font-size: var(--font-48px);
-    font-weight: 600;
-    color: var(--color-light);
-}
-
-.title-speakers h2::after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 150px;
-    height: 5px;
-    background: var(--color-gradient);
-    margin-top: var(--font-32px);
+    font-family: 'Karla', sans-serif;
 }
 
 @media screen and (max-width: 576px) {

@@ -10,6 +10,10 @@
     justify-content: space-between;
 }
 
+.navbar .navbar-brand {
+    width: 80px;
+}
+
 .navbar-menu ul {
     display: flex;
 }
@@ -17,15 +21,15 @@
 .navbar-menu ul li a {
     color: var(--color-light);
     margin-left: var(--font-32px);
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     padding: 15px 0;
-    transition: .3s;
+    transition: .2s;
 }
 
 .navbar-menu ul li a:hover {
-    color: var(--color-primary-middle);
-    transition: .3s;
+    color: var(--color-pink);
+    transition: .2s;
 }
 
 .menu-toggle {

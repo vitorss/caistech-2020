@@ -14,9 +14,14 @@
     padding-right: 70px;
 }
 
+.subfooter-infos .subfooter-brand {
+    width: 80px;
+}
+
 .subfooter-info p {
     color: var(--color-light);
     padding-top: var(--font-56px);
+    font-family: 'Karla', sans-serif;
 }
 
 .subfooter-links {
@@ -27,8 +32,18 @@
 .subfooter-links h3 {
     color: var(--color-light);
     font-size: var(--font-24px);
-    font-weight: bold;
+    font-weight: 700;
     padding-bottom: var(--font-80px);
+}
+
+.subfooter-links h3::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background: var(--color-pink);
+    margin-top: 32px;
 }
 
 .subfooter-links ul {
@@ -37,8 +52,9 @@
 
 .subfooter-links ul li a {
     color: var(--color-light);
-    font-weight: bold;
+    font-weight: 500;
     text-decoration: none;
+    font-family: 'Karla', sans-serif;
 }
 
 .subfooter-networks {

@@ -1,5 +1,5 @@
 .sponsors {
-    background: var(--color-black);
+    background: var(--color-light);
 }
 
 .content-sponsors {
@@ -9,20 +9,20 @@
 
 .title-realization h2 {
     font-size: var(--font-48px);
-    font-weight: 700;
-    color: var(--color-light);
+    font-weight: 800;
+    color: var(--color-black);
 }
 
 .title-sponsors h2 {
     font-size: var(--font-48px);
-    font-weight: 700;
-    color: var(--color-light);
+    font-weight: 800;
+    color: var(--color-black);
 }
 
 .title-support h2 {
     font-size: var(--font-48px);
-    font-weight: 700;
-    color: var(--color-light);
+    font-weight: 800;
+    color: var(--color-black);
 }
 
 .box-realization {

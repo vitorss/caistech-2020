@@ -4,9 +4,16 @@
 
 .content-contact {
     padding: var(--font-96px) 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .title-contact h2 {
+    display: flex;
+    justify-content: center;
     padding: 0 15px var(--font-96px) 15px;
     font-size: var(--font-48px);
     font-weight: 700;
@@ -19,8 +26,8 @@
     position: absolute;
     width: 150px;
     height: 5px;
-    background: var(--color-gradient);
-    margin-top: var(--font-32px);
+    background: var(--color-pink);
+    margin-top: 88px;
 }
 
 .contact-info h3 {
@@ -33,15 +40,20 @@
 .contact-info p {
     color: var(--color-gray);
     margin-bottom: var(--font-24px);
+    font-family: 'Karla', sans-serif;
 }
 
 .social-contact-icons {
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-contact-icons li {
+    margin: 0 16px;
 }
 
 .social-contact-icons li a i {
-    padding: 0 var(--font-32px) 0 0;
     text-decoration: none;
     color: var(--color-light);
     font-size: var(--font-32px);

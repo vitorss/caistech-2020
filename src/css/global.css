@@ -1,139 +1,179 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ul, li, span, a, img, blockquote, cite, table {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-weight: normal;
-    text-decoration: none;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+span,
+a,
+img,
+blockquote,
+cite,
+table {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 body {
-    background-color: var(--color-light);
-    font-family: var(--font-family);
-    font-size: var(--font-16px);
+  background-color: var(--color-light);
+  font-family: var(--font-family);
+  font-size: var(--font-16px);
 }
 
 /* estilos globais */
 
 :root {
-    /* paleta de cores */
-    --color-primary: #0C0032;
-    --color-secondary: #282828;
-    --color-primary-middle:#230090;
-    --color-primary-dark: #1A0061;
-    --color-primary-light: #3500D4;
-    --color-black: #000000;
-    --color-gray: #CECDEA;
-    --color-light: #EBEBF4;
-    --color-gradient: linear-gradient(126deg, rgba(45,0,178,1) 25%, rgba(26,0,97,1) 75%);
-    /* --color-gradient: linear-gradient(127deg, rgba(242, 30, 125, 1) 25%, rgba(32, 29, 109, 1) 75%); */
-    /* -- */
-    /* tamanhos de fontes e espaçamentos */
-    --font-16px: 1rem;
-    --font-18px: 1.125rem;
-    --font-24px: 1.5rem;
-    --font-32px: 2rem;
-    --font-40px: 2.5rem;
-    --font-48px: 3rem;
-    --font-56px: 3.5rem;
-    --font-64px: 4rem;
-    --font-72px: 4.5rem;
-    --font-80px: 5rem;
-    --font-88px: 5.5rem;
-    --font-96px: 6rem;
-    --font-104px: 6.5rem;
-    --font-112px: 7rem;
-    /* fonte padrão */
-    --font-family: 'Poppins', sans-serif;
+  /* paleta de cores */
+  --color-primary: #2a2365;
+  --color-pink: #f60076;
+  --color-lightblue: #2cdbee;
+  --color-secondary: #383838;
+  --color-primary-middle: #230090;
+  --color-primary-dark: #1a0061;
+  --color-primary-light: #3500d4;
+  --color-black: #1d1b1b;
+  --color-gray: #cecdea;
+  --color-light: #f3f7f4;
+  --color-gradient: linear-gradient(
+    126deg,
+    rgba(45, 0, 178, 1) 25%,
+    rgba(26, 0, 97, 1) 75%
+  );
+  /* --color-gradient: linear-gradient(127deg, rgba(242, 30, 125, 1) 25%, rgba(32, 29, 109, 1) 75%); */
+  /* -- */
+  /* tamanhos de fontes e espaçamentos */
+  --font-16px: 1rem;
+  --font-18px: 1.125rem;
+  --font-24px: 1.5rem;
+  --font-28px: 1.5rem;
+  --font-32px: 2rem;
+  --font-40px: 2.5rem;
+  --font-48px: 3rem;
+  --font-56px: 3.5rem;
+  --font-64px: 4rem;
+  --font-72px: 4.5rem;
+  --font-80px: 5rem;
+  --font-88px: 5.5rem;
+  --font-96px: 6rem;
+  --font-104px: 6.5rem;
+  --font-112px: 7rem;
+  /* fonte padrão */
+  --font-family: "Rubik", sans-serif;
 }
 
 .buttons {
-    max-width: 350px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Karla", sans-serif;
 }
 
 .btn-main {
-    background: var(--color-primary-light);
-    color: var(--color-light);
-    padding: 10px 25px;
-    font-weight: 500;
-    font-size: var(--font-16px);
-    text-transform: uppercase;
-    border-radius: 7px;
-    border: none;
-    transition: all .3s ease-in-out;
+  margin: 0 8px;
+  width: 200px;
+  background: var(--color-primary-light);
+  color: var(--color-light);
+  padding: 10px 25px;
+  font-weight: 500;
+  font-size: var(--font-16px);
+  text-transform: uppercase;
+  border-radius: 7px;
+  border: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-main:hover {
-    background: var(--color-primary-dark);
-    transition: all .3s ease-in-out;
+  background: var(--color-pink);
 }
 
 .btn-tab {
-    background: var(--color-primary-dark);
-    color: var(--color-light);
-    padding: 10px 25px;
-    font-weight: 500;
-    font-size: var(--font-16px);
-    border-radius: 7px;
-    border: none;
-    transition: all .3s ease-in-out;
+  background: var(--color-primary-dark);
+  color: var(--color-light);
+  padding: 10px 25px;
+  font-weight: 500;
+  font-size: var(--font-16px);
+  border-radius: 7px;
+  border: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-tab:hover {
-    background: var(--color-primary);
-    color: var(--color-light);
-    transition: all .3s ease-in-out;
+  background: var(--color-primary);
+  color: var(--color-light);
 }
 
 .btn-contact {
-    background: var(--color-secondary);
-    color: var(--color-light);
-    padding: 10px 25px;
-    font-weight: 500;
-    font-size: var(--font-16px);
-    text-transform: uppercase;
-    border-radius: 7px;
-    border: none;
-    transition: all .3s ease-in-out;
+  background: var(--color-secondary);
+  color: var(--color-light);
+  padding: 10px 25px;
+  font-weight: 500;
+  font-size: var(--font-16px);
+  text-transform: uppercase;
+  border-radius: 7px;
+  border: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-contact:hover {
-    background: var(--color-black);
-    color: var(--color-light);
+  background: var(--color-black);
+  color: var(--color-light);
 }
 
 .buttons a {
-    color: var(--color-light);
+  color: var(--color-light);
 }
 
 .buttons a:hover {
-    color: var(--color-light);
+  color: var(--color-light);
 }
 
 .padding-bottom-56px {
-    padding-bottom: 56px;
+  padding-bottom: 56px;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 #particles-js {
-    position: absolute;
-    background: var(--color-black);
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    width: 100%;
-    height: 700px;
+  position: absolute;
+  background: #2a2365;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  width: 100%;
+  height: 700px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e9155a;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e66892;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 8px;
 }

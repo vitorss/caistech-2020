@@ -21,10 +21,10 @@
                     <div class="navbar-menu">
                         <ul>
                             <li><a href="#about">O Evento</a></li>
-                            <li><a href="#">Programação</a></li>
-                            <li><a href="#">Inscrições</a></li>
-                            <li><a href="#">Submissão</a></li>
-                            <li><a href="#">Livro Anais</a></li>
+                            <li><a href="#speakers">Palestrantes</a></li>
+                            <li><a href="#programs">Programação</a></li>
+                            <li><a href="#questions">Perguntas</a></li>
+                            <li><a href="#contact">Contato</a></li>
                         </ul>
                     </div>
                     <div class="menu-toggle" onclick="openNav()">
@@ -40,10 +40,11 @@
         </div>
         <header class="wrapper">
             <div class="container">
-                <div class="content-area">
+                <div class="content-area particles-bg">
                     <div class="content-area-wrapper">
-                        <h1>Lorem Ipsum is simply.</h1>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h1 class="t-1">Bem-vindo(a) ao</h1>
+                        <h1 class="t-2">CaisTech</h1>
+                        <p>O maior evento de tecnologia do Sul do Piauí.</p>
                         <div class="buttons">
                             <a class="btn btn-main" href="#">Inscreva-se</a>
                             <a class="btn btn-main" href="#about">Sobre o evento</a>
@@ -66,9 +67,9 @@
             <div class="container">
                 <div class="content-event">
                     <div class="event-counter-info">
-                        <h2>CaisTech 2020</h2>
-                        <h5>15, Maio, 2020</h5>
-                        <p><i class="bx bx-map"></i>Floriano, Piauí, Brasil</p>
+                        <h2>CaisTech 2021</h2>
+                        <h5>09, 10 e 11 de Agosto, 2021</h5>
+                        <p><i class="bx bxl-youtube"></i>Através do Youtube do CaisTech.</p>
                     </div>
                     <div class="event-counter-timer">
                         <div class="counter-box">
@@ -123,7 +124,7 @@
             </div>
         </section>
         <!-- section speakers -->
-        <section class="speakers">
+        <section class="speakers" id="speakers">
             <div class="container">
                 <div class="content-speakers">
                     <div class="row">
@@ -308,7 +309,7 @@
         </section>
         <!-- section programs -->
 
-        <section class="programs">
+        <section class="programs" id="programs">
             <div class="container">
                 <div class="content-tabs">
                     <div class="row">
@@ -418,7 +419,7 @@
         </section>
 
         <!-- section submission -->
-        <section class="submission">
+        <!-- <section class="submission">
             <div class="container">
                 <div class="content-submission">
                     <div class="row">
@@ -481,14 +482,14 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- section common questions -->
-        <section class="questions">
+        <section class="questions" id="questions">
             <div class="container">
                 <div class="content-questions">
                     <div class="row">
                         <div class="title-questions">
-                            <h2>Pesguntas Frequêntes</h2>
+                            <h2>Perguntas Frequêntes</h2>
                         </div>
                     </div>
                     <div class="box-questions">
@@ -553,7 +554,7 @@
             </div>
         </section>
         <!-- section sponsors -->
-        <section class="sponsors">
+        <section class="sponsors" id="sponsors">
             <div class="container">
                 <div class="content-sponsors">
                     <div class="box-realization">
@@ -585,7 +586,7 @@
             </div>
         </section>
         <!-- section contact -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="content-contact">
                     <div class="row">
@@ -594,46 +595,24 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="contact-info col-md-4">
+                        <div class="contact-info">
                             <h3>Veja nossos contatos</h3>
                             <p>Email: contato@caistech.org</p>
                             <p>Local: Instituto Federal do Piauí - IFPI(Campus Floriano)</p>
 
                             <h3>Nossas redes sociais</h3>
                             <ul class="social-contact-icons">
-                                <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
                                 <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                                <li><a href="#"><i class="bx bxl-github"></i></a></li>
+                                <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
+                                <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
                             </ul>
-                        </div>
-                        <div class="contact-form col-md">
-                            <form action="">
-                                <div class="form-row">
-                                    <div class="form-group col-md">
-                                        <input type="text" class="form-control" placeholder="Nome">
-                                    </div>
-                                    <div class="form-group col-md">
-                                        <input type="email" class="form-control" placeholder="E-mail">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="Assunto">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                        placeholder="Mensagem"></textarea>
-                                </div>
-                                <button class="btn btn-contact btn-block">Enviar</button>
-                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--  -->
-        <section class="subfooter">
+        <section class="subfooter" id="subfooter">
             <div class="container">
                 <div class="content-subfooter">
                     <div class="subfooter-infos">
@@ -647,32 +626,24 @@
                         </div>
                     </div>
                     <div class="subfooter-links">
-                        <h3>Useful links</h3>
+                        <h3>Links de Acesso Rápido</h3>
                         <ul>
-                            <li><a href="#">O Evento</a></li>
-                            <li><a href="#">Programação</a></li>
-                            <li><a href="#">Inscrição</a></li>
-                            <li><a href="#">Submissão</a></li>
-                            <li><a href="#">Livro Anais</a></li>
-                        </ul>
-                    </div>
-                    <div class="subfooter-networks">
-                        <h3>Our networks</h3>
-                        <ul class="social-subfooter-icons">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-github"></i></a></li>
+                            <li><a href="#about">O Evento</a></li>
+                            <li><a href="#speakers">Palestrantes</a></li>
+                            <li><a href="#programs">Programação</a></li>
+                            <li><a href="#questions">Inscrição</a></li>
+                            <li><a href="#sponsors">Realização</a></li>
+                            <li><a href="#contact">Contato</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="content-footer">
                     <div class="footer-info">
-                        <p>&copy;2020. Alguns direitos reservados</p>
+                        <p>&copy;2021. Alguns direitos reservados</p>
                         <p>Desenvolvido por <a href="https://github.com/pixebit">Pixebit</a></p>
                     </div>
                     <div class="footer-brand">
@@ -686,7 +657,7 @@
     <script type="text/javascript" src="./src/js/sidenav.js"></script>
     <script type="text/javascript" src="./src/js/tab.js"></script>
     <script type="text/javascript" src="./src/js/collapse.js"></script>
-    <script type="text/javascript" src="./src/js/particles.js"></script>
+    <script type="text/javascript" src="/src/js/particles.js"></script>
     <script type="text/javascript" src="./src/js/app.js"></script>
 </body>
 </html>
