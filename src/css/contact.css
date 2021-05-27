@@ -1,123 +1,124 @@
 .contact {
-    background: var(--color-black);
+  background: var(--color-black);
 }
 
 .content-contact {
-    padding: var(--font-96px) 15px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  padding: var(--font-96px) 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .title-contact h2 {
-    display: flex;
-    justify-content: center;
-    padding: 0 15px var(--font-96px) 15px;
-    font-size: var(--font-48px);
-    font-weight: 700;
-    color: var(--color-light);
+  display: flex;
+  justify-content: center;
+  padding: 0 15px var(--font-96px) 15px;
+  font-size: var(--font-48px);
+  font-weight: 700;
+  color: var(--color-light);
+  text-shadow: -4px -4px 0px var(--color-pink);
 }
 
 .title-contact h2::after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 150px;
-    height: 5px;
-    background: var(--color-pink);
-    margin-top: 88px;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 5px;
+  background: var(--color-pink);
+  margin-top: 88px;
 }
 
 .contact-info h3 {
-    font-size: var(--font-24px);
-    font-weight: 700;
-    color: var(--color-light);
-    padding-bottom: var(--font-32px);
+  font-size: var(--font-24px);
+  font-weight: 700;
+  color: var(--color-light);
+  padding-bottom: var(--font-32px);
 }
 
 .contact-info p {
-    color: var(--color-gray);
-    margin-bottom: var(--font-24px);
-    font-family: 'Karla', sans-serif;
+  color: var(--color-gray);
+  margin-bottom: var(--font-24px);
+  font-family: "Karla", sans-serif;
 }
 
 .social-contact-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-contact-icons li {
-    margin: 0 16px;
+  margin: 0 16px;
 }
 
 .social-contact-icons li a i {
-    text-decoration: none;
-    color: var(--color-light);
-    font-size: var(--font-32px);
-    transition: .3s;
+  text-decoration: none;
+  color: var(--color-light);
+  font-size: var(--font-32px);
+  transition: 0.3s;
 }
 
 .social-contact-icons li a i:hover {
-    color: var(--color-primary-light);
-    transition: .3s;
+  color: var(--color-pink);
+  transition: 0.3s;
 }
 
 .contact-form {
-    background: var(--color-light);
-    padding: var(--font-64px) var(--font-32px);
-    border-radius: 6px;
+  background: var(--color-light);
+  padding: var(--font-64px) var(--font-32px);
+  border-radius: 6px;
 }
 
 .contact-form input::placeholder {
-    color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .contact-form textarea {
-    background-color: var(--color-light);
+  background-color: var(--color-light);
 }
 
 .contact-form textarea::placeholder {
-    color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 
-.contact-form input[type=text] {
-    background-color: var(--color-light);
-    color: var(--color-secondary);
+.contact-form input[type="text"] {
+  background-color: var(--color-light);
+  color: var(--color-secondary);
 }
 
-.contact-form input[type=email] {
-    background-color: var(--color-light);
-    color: var(--color-secondary);
+.contact-form input[type="email"] {
+  background-color: var(--color-light);
+  color: var(--color-secondary);
 }
 
 .contact-form textarea:focus {
-    background-color: var(--color-light);
-    color: var(--color-secondary);
+  background-color: var(--color-light);
+  color: var(--color-secondary);
 }
 
 @media screen and (max-width: 576px) {
-    .title-contact h2 {
-        font-size: var(--font-32px);
-    }
-    .social-contact-icons {
-        margin-bottom: var(--font-32px);
-    }
+  .title-contact h2 {
+    font-size: var(--font-32px);
+  }
+  .social-contact-icons {
+    margin-bottom: var(--font-32px);
+  }
 }
 
 @media (max-width: 720px) {
-    .social-contact-icons {
-        margin-bottom: var(--font-32px);
-    }
+  .social-contact-icons {
+    margin-bottom: var(--font-32px);
+  }
 }
 
 @media (max-width: 960px) {
-    .social-contact-icons {
-        margin-bottom: var(--font-32px);
-    }
-    .social-contact-icons li a i {
-        padding: 0 12px 0 0;
-    }
+  .social-contact-icons {
+    margin-bottom: var(--font-32px);
+  }
+  .social-contact-icons li a i {
+    padding: 0 12px 0 0;
+  }
 }

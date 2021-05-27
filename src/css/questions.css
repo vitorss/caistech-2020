@@ -1,116 +1,118 @@
 .questions {
-    background: var(--color-black);
+  background: var(--color-black);
 }
 
 .content-questions {
-    padding: var(--font-96px) 15px;
+  padding: var(--font-96px) 15px;
 }
 
 .title-questions h2 {
-    padding: 0 15px var(--font-96px) 15px;
-    font-size: var(--font-48px);
-    font-weight: 800;
-    color: var(--color-light);
+  padding: 0 15px var(--font-96px) 15px;
+  font-size: var(--font-48px);
+  font-weight: 800;
+  color: var(--color-light);
+  text-shadow: -4px -4px 0px var(--color-pink);
 }
 
 .title-questions h2::after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 150px;
-    height: 5px;
-    background: var(--color-pink);
-    margin-top: var(--font-32px);
+  display: block;
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 5px;
+  background: var(--color-pink);
+  margin-top: var(--font-32px);
 }
 
 .collapsible {
-    font-size: var(--font-18px);
-    font-weight: 500;
-    color: var(--color-light);
-    background: transparent;
-    width: 100%;
-    border: none;
-    text-align: left;
-    transition: 0.2s ease-out;
+  font-size: var(--font-18px);
+  font-weight: 500;
+  color: var(--color-light);
+  background: transparent;
+  width: 100%;
+  border: none;
+  text-align: left;
+  transition: 0.2s ease-out;
 }
 
 .collapsible::after {
-    content: url('/src/assets/right-arrow-alt-solid-24.png');
-    font-size: var(--font-16px);
-    color: var(--color-secondary);
-    float: left;
-    margin-right: var(--font-16px);
-    transition: all .2s;
+  content: url("/src/assets/right-arrow-alt-solid-24.png");
+  font-size: var(--font-16px);
+  color: var(--color-secondary);
+  float: left;
+  margin-right: var(--font-16px);
+  transition: all 0.2s;
 }
 
 .box-questions .active::after {
-    content: url('/src/assets/down-arrow-alt-solid-24.png');
+  content: url("/src/assets/down-arrow-alt-solid-24.png");
 }
 
 .collapsible:focus {
-    outline: none;
+  outline: none;
 }
 
-.active, .collapsible:hover {
-    color: var(--color-pink);
+.box-questions .active,
+.collapsible:hover {
+  color: var(--color-pink);
 }
 
 .box-questions {
-    padding-bottom: var(--font-24px);
+  padding-bottom: var(--font-24px);
 }
 
 .box-answers {
-    padding: 0 16px;
-    display: none;
-    overflow: hidden;
+  padding: 0 16px;
+  display: none;
+  overflow: hidden;
 }
 
 .box-answers p {
-    font-size: var(--font-16px);
-    color: var(--color-light);
-    padding: var(--font-16px) 26px;
-    -webkit-animation-name: fadeEffect;
-    animation-name: fadeEffect;
-    animation-duration: 1s;
-    font-family: 'Karla', sans-serif;
+  font-size: var(--font-16px);
+  color: var(--color-light);
+  padding: var(--font-16px) 26px;
+  -webkit-animation-name: fadeEffect;
+  animation-name: fadeEffect;
+  animation-duration: 1s;
+  font-family: "Karla", sans-serif;
 }
 
 @-webkit-keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .title-questions h2 {
-        font-size: var(--font-32px);
-    }
-    .collapsible {
-        font-size: var(--font-16px);
-    }
-    .collapsible::after {
-        content: none;
-    }
-    .box-questions .active:after {
-        content: none;
-    }
-    .box-answers {
-        padding: 0;
-    }
-    .box-answers p {
-        font-size: 16px;
-        padding: 16px;
-    }
+  .title-questions h2 {
+    font-size: var(--font-32px);
+  }
+  .collapsible {
+    font-size: var(--font-16px);
+  }
+  .collapsible::after {
+    content: none;
+  }
+  .box-questions .active:after {
+    content: none;
+  }
+  .box-answers {
+    padding: 0;
+  }
+  .box-answers p {
+    font-size: 16px;
+    padding: 16px;
+  }
 }
