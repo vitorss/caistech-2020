@@ -5,6 +5,6 @@ function scrollFunction() {
         document.getElementById("navbar").style.background = "#030303";
     } else {
         document.getElementById("navbar").style.padding = "15px 0";
-        document.getElementById("navbar").style.background = "#03030383";
+        document.getElementById("navbar").style.background = "#030303";
     }
 }

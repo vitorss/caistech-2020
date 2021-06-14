@@ -42,7 +42,7 @@
 
 .box-tabs {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0px;
   display: flex;
   justify-content: center;
 }
@@ -51,7 +51,7 @@
   width: 100%;
   padding: 20px 30px;
   border: none;
-  border-radius: 10px;
+  border-radius: 0px;
   border-collapse: collapse;
   cursor: pointer;
   margin: 0px;
@@ -116,8 +116,9 @@
 
 .day-box {
   width: 100%;
+  background: #ff007b15;
   border: 1px solid #ff007b2d;
-  border-radius: 10px;
+  border-radius: 0px;
   overflow: hidden;
   display: flex;
   margin: 32px 0px 16px 0px;
@@ -185,6 +186,9 @@
 }
 
 @media screen and (max-width: 576px) {
+  .content-tabs {
+    padding: 40px 8px;
+  }
   .title-programs span {
     font-size: 14px;
   }
@@ -194,9 +198,6 @@
   .box-tabs {
     display: flex;
     flex-direction: column;
-  }
-  .box-tabs button {
-    border-radius: 10px !important;
   }
   .tab-links {
     width: 100%;
@@ -209,7 +210,7 @@
   }
   .profile-box {
     width: 100%;
-    border-right: 1px solid #ff007b2d;
+    border-right: none;
     border-bottom: 1px solid #ff007b2d;
   }
   .info-box {
@@ -265,7 +266,7 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 992px) {
   .profile-box {
     width: 100%;
     border-right: 1px solid #ff007b2d;
@@ -274,5 +275,18 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title-programs span {
+    font-size: 14px;
+  }
+  .title-programs h2 {
+    padding: 0 15px var(--font-64px) 15px;
+    font-size: 32px;
+  }
+  .title-programs h2::after {
+    margin-top: 16px;
   }
 }

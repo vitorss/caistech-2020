@@ -7,22 +7,16 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  grid-gap: 70px;
 }
 
 .subfooter-infos {
   flex: 0;
-  padding-right: 70px;
 }
 
 .subfooter-infos .subfooter-brand {
   width: 80px;
 }
-
-/* .subfooter-info p {
-  color: var(--color-light);
-  padding-top: var(--font-56px);
-  font-family: "Karla", sans-serif;
-} */
 
 .subfooter-contact {
   flex: 1;
@@ -66,16 +60,16 @@
   transition: all 0.3s;
   background: var(--color-pink);
   padding: 8px;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 .subfooter-contact .social-contact-icons li a i:hover {
-  background: #ce0063;
+  box-shadow: inset 2.5em 0 0 0 var(--color-lightblue);
+  color: var(--color-light)
 }
 
 .subfooter-links {
   flex: 1;
-  /* padding: 0 10px; */
 }
 
 .subfooter-links span {
@@ -93,18 +87,7 @@
   padding-bottom: var(--font-32px);
   text-transform: uppercase;
   letter-spacing: 2px;
-  /* text-shadow: 3px 3px 0 var(--color-lightblue); */
 }
-
-/* .subfooter-links h3::after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 5px;
-  background: var(--color-pink);
-  margin-top: 24px;
-} */
 
 .subfooter-links ul {
   line-height: 32px;
@@ -115,7 +98,7 @@
   font-weight: 500;
   text-decoration: none;
   font-family: "Karla", sans-serif;
-  transition: all .2s;
+  transition: all .3s;
 }
 
 .subfooter-links ul li a:hover {
@@ -135,21 +118,22 @@
 }
 
 @media screen and (max-width: 576px) {
+  .subfooter {
+    padding: 40px 8px;
+  }
   .content-subfooter {
     display: flex;
     flex-direction: column;
+    grid-gap: 32px;
   }
   .subfooter-infos {
-    padding: 0;
-  }
-  .subfooter-infos p {
-    padding-bottom: var(--font-56px);
+    margin: 0;
   }
   .subfooter-contact {
-    margin-top: 32px;
+    margin-top: 0px;
   }
   .subfooter-links {
-    margin-top: 32px;
+    margin-top: 0px;
   }
   .subfooter-links h3 {
     padding-bottom: var(--font-56px);

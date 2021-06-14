@@ -107,6 +107,9 @@
 }
 
 @media screen and (max-width: 576px) {
+  .content-questions {
+    padding: 40px 8px;
+  }
   .title-questions span {
     font-size: 14px;
   }
@@ -128,5 +131,18 @@
   .box-answers p {
     font-size: 16px;
     padding: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title-questions span {
+    font-size: 14px;
+  }
+  .title-questions h2 {
+    padding: 0 15px var(--font-64px) 15px;
+    font-size: 32px;
+  }
+  .title-questions h2::after {
+    margin-top: 16px;
   }
 }

@@ -81,11 +81,12 @@
         font-size: var(--font-32px);
     }
     .counter-box .time {
-        padding: 25px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        font-size: var(--font-32px);
+        padding: 0px;
+        font-size: 28px;
+    }
+    .counter-box .text {
+        font-size: 14px;
+        text-align: left;
     }
     .counter-box {
         margin-top: var(--font-40px);
@@ -95,6 +96,15 @@
 @media screen and (max-width: 768px) and (max-width: 992px){
     .counter-box {
         margin-top: var(--font-40px);
+    }
+    .content-event {
+        justify-content: space-between;
+    }
+    .event-counter-timer {
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
     }
 }
 

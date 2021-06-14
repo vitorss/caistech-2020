@@ -40,8 +40,8 @@
         </div>
       </section>
       <!-- section wrapper -->
-      <div id="particles-js"></div>
-      <header class="wrapper">
+      <div id="cover"></div>
+      <header class="wrapper" id="wrapper">
         <div class="container">
           <div class="content-area particles-bg">
             <div class="content-area-wrapper">
@@ -59,11 +59,11 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
             >&times;</a
           >
-          <li><a href="#about">O Evento</a></li>
-          <li><a href="#speakers">Palestrantes</a></li>
-          <li><a href="#programs">Programação</a></li>
-          <li><a href="#questions">Perguntas</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a href="#about" onclick="closeNav()">O Evento</a></li>
+          <li><a href="#speakers" onclick="closeNav()">Palestrantes</a></li>
+          <li><a href="#programs" onclick="closeNav()">Programação</a></li>
+          <li><a href="#questions" onclick="closeNav()">Perguntas</a></li>
+          <li><a href="#contact" onclick="closeNav()">Contato</a></li>
           <li><a href="#" class="btn-ticket">Inscreva-se</a></li>
         </div>
       </header>
@@ -103,8 +103,8 @@
       <section class="about" id="about">
         <div class="container">
           <div class="content-about">
-            <div class="row">
-              <div class="col-md">
+            <div class="row about-col">
+              <div class="col-md col-lg col-sm">
                 <div class="about-img">
                   <img
                     src="/src/assets/img-about.jpg"
@@ -112,7 +112,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md">
+              <div class="col-md col-lg col-sm">
                 <div class="about-info">
                   <span>Sobre nós</span>
                   <h2>O Evento</h2>
@@ -349,8 +349,8 @@
               <button
                 class="btn tab-links"
                 style="
-                  border-radius: 10px 0 0 10px;
-                  border-right: 1px solid #ce0063;
+                  border-radius: 0px 0 0 0px;
+                  border-right: 1px solid #e92d9b94;
                 "
                 onclick="OpenTab(event, 'One')"
               >
@@ -368,8 +368,8 @@
               <button
                 class="btn tab-links"
                 style="
-                  border-radius: 0 10px 10px 0;
-                  border-left: 1px solid #ce0063;
+                  border-radius: 0 0px 0px 0;
+                  border-left: 1px solid #e92d9b94;
                 "
                 onclick="OpenTab(event, 'Three')"
               >
@@ -490,72 +490,6 @@
           </div>
         </div>
       </section>
-
-      <!-- section submission -->
-      <!-- <section class="submission">
-            <div class="container">
-                <div class="content-submission">
-                    <div class="row">
-                        <div class="title-submission">
-                            <h2>Normas e orientações gerais para os autores dos artigos</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="guidelines col-md">
-                            <ul>
-                                <li>O artigo pode conter no máximo 05 autores, com no mínimo 05 (cinco) e no máximo de
-                                    10 (dez) páginas. Além disso, o arquivo deverá ser submetido no formato pdf, com
-                                    tamanho físico máximo de 2MB;</li>
-                                <li>Só serão aceitos artigos submetidos via Plataforma EASYCHAIR <a href="#">(link para
-                                        submissão)</a></li>
-                                <li>O artigo deverá seguir o template da Sociedade Brasileira de Computação (SBC),
-                                    disponível em: <a href="#">(link do template)</a></li>
-                                <li>As orientações sobre formatação, alinhamento dos parágrafos, títulos de seções
-                                    dentre outros estão descritas em cada seção ao longo do template e o mesmo já se
-                                    encontra na formatação sugerida.</li>
-                                <li>O artigo submetido deve se adequar a um das áreas temáticas do evento;</li>
-                                <li>Os artigos serão apresentados na modalidade pôster;</li>
-                                <li>O template do pôster será divulgado após o resultado das análises dos artigos,
-                                    através do site do evento;</li>
-                                <li>Tanto o autor quanto um dos coautores do artigo poderá apresentá-lo;</li>
-                                <li>Qualquer dúvida sobre a submissão dos artigos deverá ser enviada para o e-mail –
-                                    comissaocientifica@caistech.org.</li>
-                            </ul>
-                        </div>
-                        <div class="thematic-area col-md">
-                            <h3>ÁREAS TEMÁTICAS DE INTERESSE DO EVENTO</h3>
-                            <ul>
-                                <li>Arquitetura de Computadores;</li>
-                                <li>Banco de Dados;</li>
-                                <li>Big Data, Data Science e Internet of Things (IoT);</li>
-                                <li>Computação em nuvem;</li>
-                                <li>Computação Gráfica;</li>
-                                <li>Desenvolvimento de Jogos Digitais;</li>
-                                <li>Engenharia de Software;</li>
-                                <li>Gestão de Tecnologia da Informação;</li>
-                                <li>Inclusão Digital;</li>
-                                <li>Informática na Educação;</li>
-                                <li>Inteligência Artificial;</li>
-                                <li>Automação e Sistemas Inteligentes;</li>
-                                <li>Linguagens de Programação;</li>
-                                <li>Processamento Digital de Imagens;</li>
-                                <li>Realidade Virtual;</li>
-                                <li>Redes de Computadores;</li>
-                                <li>Segurança da Informação e de Sistemas Computacionais;</li>
-                                <li>Sistemas de Informação;</li>
-                                <li>Sistemas de Informação Geográfica;</li>
-                                <li>Sistemas Distribuídos;</li>
-                                <li>Sistemas Embarcados;</li>
-                                <li>Sistemas Hipermídia, Multimídia e Web;</li>
-                                <li>Sistemas Operacionais;</li>
-                                <li>Software Livre; </li>
-                                <li>Visão Computacional.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
       <!-- section common questions -->
 
       <section class="questions" id="questions">
@@ -688,34 +622,6 @@
           </div>
         </div>
       </section>
-      <!-- section contact -->
-      <!-- <section class="contact" id="contact">
-            <div class="container">
-                <div class="content-contact">
-                    <div class="row">
-                        <div class="title-contact">
-                            <span>Fale Conosco</span>
-                            <h2>Nosso Contato</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="contact-info">
-                            <h3>Veja nossos contatos</h3>
-                            <p>Email: contato@caistech.org</p>
-                            <p>Local: Instituto Federal do Piauí - IFPI(Campus Floriano)</p>
-
-                            <h3>Nossas redes sociais</h3>
-                            <ul class="social-contact-icons">
-                                <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                                <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
-                                <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-      <!--  -->
       <section class="subfooter" id="contact">
         <div class="container">
           <div class="content-subfooter">
@@ -731,7 +637,6 @@
                 <p>Email: contato@caistech.org</p>
                 <p>Local: Instituto Federal do Piauí - IFPI(Campus Floriano)</p>
               </div>
-              <!-- <h3>Nossas redes sociais</h3> -->
               <ul class="social-contact-icons">
                 <li>
                   <a href="#"><i class="bx bxl-instagram"></i></a>
@@ -772,13 +677,13 @@
           </div>
         </div>
       </footer>
+      <a href="#wrapper" id="btn-fixed"><i class='bx bx-up-arrow-alt'></i></a>
     </main>
     <script type="text/javascript" src="./src/js/countdown.js"></script>
     <script type="text/javascript" src="./src/js/sidenav.js"></script>
     <script type="text/javascript" src="./src/js/tab.js"></script>
     <script type="text/javascript" src="./src/js/collapse.js"></script>
-    <script type="text/javascript" src="/src/js/particles.js"></script>
+    <!-- <script type="text/javascript" src="/src/js/particles.js"></script> -->
     <script type="text/javascript" src="./src/js/app.js"></script>
-    <script type="text/javascript" src="./src/js/main.js"></script>
   </body>
 </html>

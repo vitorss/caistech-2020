@@ -22,7 +22,6 @@
   font-weight: 800;
   color: var(--color-light);
   letter-spacing: 2px;
-  /* text-shadow: 4px 4px 0px var(--color-pink); */
 }
 
 .title-speakers h2::after {
@@ -36,32 +35,21 @@
 }
 
 .card-img-box {
-  /* width: 250px; */
   position: relative;
   overflow: hidden;
-  border-radius: 7px;
+  border-radius: 0px;
   transition: 0.5s;
 }
 
 .img-box img {
-  border-radius: 7px;
+  border-radius: 0px;
   width: 100%;
 }
 
 .img-box-hover {
   width: 100%;
   height: 100%;
-  background: #da22ff83; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #33a3ee85,
-    #2622ff85
-  );
-  background: linear-gradient(
-    to right,
-    #33a3ee85,
-    #2622ff85
-  ); 
+  background: #2cdbee21; 
   position: absolute;
   top: 0;
   display: flex;
@@ -109,13 +97,16 @@
 }
 
 .card-content-box p {
-  font-size: var(--font-16px);
+  font-size: var(--font-18px);
   color: var(--color-gray);
   padding-top: 8px;
   font-family: "Karla", sans-serif;
 }
 
 @media screen and (max-width: 576px) {
+  .content-speakers {
+    padding: 40px 8px;
+  }
   .title-speakers span {
     font-size: 14px;
   }
@@ -130,5 +121,18 @@
   }
   .card-content-box {
     margin-bottom: var(--font-32px);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title-speakers span {
+    font-size: 14px;
+  }
+  .title-speakers h2 {
+    padding: 0 15px var(--font-64px) 15px;
+    font-size: 32px;
+  }
+  .title-speakers h2::after {
+    margin-top: 16px;
   }
 }

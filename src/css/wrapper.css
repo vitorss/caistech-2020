@@ -33,36 +33,51 @@
 .content-area-wrapper h1::after {
   position: absolute;
   content: "";
-  height: 30px;
+  height: 15px;
   width: 580px;
   margin-left: 0px;
   margin-top: 40px;
   z-index: -1;
   background: var(--color-pink);
+  box-shadow: 0 15px 0 0 var(--color-lightblue);
 }
 
 .content-area-wrapper h6 {
+  width: 470px;
   margin-top: 16px;
   margin-bottom: 38px;
   text-transform: uppercase;
   text-align: left;
   font-size: var(--font-18px);
   font-weight: 600;
-  color: var(--color-light);
   font-family: "Karla", sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
 }
 
 @media screen and (max-width: 576px) {
+  .wrapper {
+    height: 550px;
+  }
   .content-area {
     justify-content: center;
   }
   .content-area-wrapper h1 {
-    font-size: var(--font-48px);
+    font-size: var(--font-32px);
     justify-content: center;
     text-align: center;
   }
   .content-area-wrapper h1::after {
     content: none;
+  }
+  .content-area-wrapper h6 {
+    width: 100%;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
   }
   .content-area-wrapper p {
     text-align: center;
