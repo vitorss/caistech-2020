@@ -1,426 +1,498 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./src/css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/index.css" />
     <link rel="shortcut icon" href="./src/assets/favicon.ico" />
     <title>Cais Tech | 2021</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <!-- section navigation bar -->
-        <section class="navigation">
-            <div class="container">
-                <nav class="navbar">
-                    <div class="navbar-brand">
-                        <img src="/src/assets/brand.png" alt="CaisTech">
-                    </div>
-                    <div class="navbar-menu">
-                        <ul>
-                            <li><a href="#about">O Evento</a></li>
-                            <li><a href="#speakers">Palestrantes</a></li>
-                            <li><a href="#programs">Programação</a></li>
-                            <li><a href="#questions">Perguntas</a></li>
-                            <li><a href="#contact">Contato</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu-toggle" onclick="openNav()">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </nav>
+      <!-- section navigation bar -->
+      <section class="navigation" id="navbar">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar-brand">
+              <img src="/src/assets/brand.png" alt="CaisTech" />
             </div>
-        </section>
-        <!-- section wrapper -->
-        <div id="particles-js">
-        </div>
-        <header class="wrapper">
-            <div class="container">
-                <div class="content-area particles-bg">
-                    <div class="content-area-wrapper">
-                        <h1 class="t-1">Bem-vindo(a) ao</h1>
-                        <h1 class="t-2">CaisTech</h1>
-                        <p>O maior evento de tecnologia do Sul do Piauí.</p>
-                        <div class="buttons">
-                            <a class="btn btn-main" href="#">Inscreva-se</a>
-                            <a class="btn btn-main" href="#about">Sobre o evento</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="navbar-menu">
+              <ul>
                 <li><a href="#about">O Evento</a></li>
-                <li><a href="#">Programação</a></li>
-                <li><a href="#">Inscrições</a></li>
-                <li><a href="#">Submissão</a></li>
-                <li><a href="#">Livro Anais</a></li>
+                <li><a href="#speakers">Palestrantes</a></li>
+                <li><a href="#programs">Programação</a></li>
+                <li><a href="#questions">Perguntas</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#" class="btn-ticket">Inscreva-se</a></li>
+              </ul>
             </div>
-        </header>
-        <!-- section event counter -->
-        <section class="event-counter">
-            <div class="container">
-                <div class="content-event">
-                    <div class="event-counter-info">
-                        <h2>CaisTech 2021</h2>
-                        <h5>09 a 11 de Agosto, 2021</h5>
-                        <p><i class="bx bxl-youtube"></i>Através do Youtube do CaisTech.</p>
-                    </div>
-                    <div class="event-counter-timer">
-                        <div class="counter-box">
-                            <h3 class="time"><span id="days"></span></h3>
-                            <span class="text">Dias</span>
-                        </div>
-                        <div class="counter-box">
-                            <h3 class="time"><span id="hours"></span></h3>
-                            <span class="text">Horas</span>
-                        </div>
-                        <div class="counter-box">
-                            <h3 class="time"><span id="minutes"></span></h3>
-                            <span class="text">Minutos</span>
-                        </div>
-                        <div class="counter-box">
-                            <h3 class="time"><span id="seconds"></span></h3>
-                            <span class="text">Segundos</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="menu-toggle" onclick="openNav()">
+              <div></div>
+              <div></div>
+              <div></div>
             </div>
-        </section>
-        <!-- section about -->
-        <section class="about" id="about">
-            <div class="container">
-                <div class="content-about">
-                    <div class="row">
-                        <div class="col-md">
-                            <div class="about-img">
-                                <img src="/src/assets/img-about.jpg" alt="CaisTech - Floriano">
-                            </div>
-                        </div>
-                        <div class="col-md">
-                            <div class="about-info">
-                                <h2>O Evento</h2>
-                                <p>O Congresso Anual de Informática do Sul do Piauí (CAIS TECH) é um evento de cunho
-                                    científico, de realização anual, que tem como objetivo reunir profissionais de TI,
-                                    tanto no âmbito federal, quanto no empresarial, para expor tendências que estão
-                                    surgindo neste eixo de mercado.</p>
-                                <p>Na sua terceira edição, contará com graduandos do curso de Tecnologia em Análise e
-                                    Desenvolvimento de Sistemas do IFPI Campus Floriano, professores da rede federal
-                                    brasileira e dos Estados Unidos.</p>
-                                <p>Tudo acontecerá no IFPI Campus Floriano, local já consagrado pela excelência em
-                                    ensino, estrutura e por apoio a educação, e eventos que agreguem as pessoas. Serão
-                                    três dias – 09 a 11 de agosto de 2021 – de imersão em novas tecnologias, novos
-                                    métodos de desenvolvimento, de se relacionar e de obter ideias empreendedoras no
-                                    atual cenário brasileiro. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </nav>
+        </div>
+      </section>
+      <!-- section wrapper -->
+      <div id="particles-js"></div>
+      <header class="wrapper">
+        <div class="container">
+          <div class="content-area particles-bg">
+            <div class="content-area-wrapper">
+              <h1 class="t-1">Bem-vindo(a) ao <br> CaisTech</h1>
+              <h6>O maior evento de tecnologia do Sul do Piauí.</h6>
+              <div class="buttons">
+                <a class="btn btn-main" href="#">Inscreva-se</a>
+                <a class="btn btn-main" href="#about">Sobre o evento</a>
+              </div>
             </div>
-        </section>
-        <!-- section speakers -->
-        <section class="speakers" id="speakers">
-            <div class="container">
-                <div class="content-speakers">
-                    <div class="row">
-                        <div class="title-speakers">
-                            <h2>Palestrantes</h2>
-                        </div>
-                    </div>
-                    <div class="row padding-bottom-56px">
-                        <div class="col-md-3">
-                            <div class="card-speaker">
-                                <div class="card-img-box">
-                                    <div class="img-box">
-                                        <img src="/src/assets/avatar.jpg" alt="">
-                                    </div>
-                                    <div class="img-box-hover">
-                                        <ul class="social-icons">
-                                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-github"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-content-box">
-                                    <h3>Jason Miller</h3>
-                                    <p>Creative Director</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card-speaker">
-                                <div class="card-img-box">
-                                    <div class="img-box">
-                                        <img src="/src/assets/avatar.jpg" alt="">
-                                    </div>
-                                    <div class="img-box-hover">
-                                        <ul class="social-icons">
-                                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-github"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-content-box">
-                                    <h3>Jason Miller</h3>
-                                    <p>Creative Director</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card-speaker">
-                                <div class="card-img-box">
-                                    <div class="img-box">
-                                        <img src="/src/assets/avatar.jpg" alt="">
-                                    </div>
-                                    <div class="img-box-hover">
-                                        <ul class="social-icons">
-                                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-github"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-content-box">
-                                    <h3>Jason Miller</h3>
-                                    <p>Creative Director</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card-speaker">
-                                <div class="card-img-box">
-                                    <div class="img-box">
-                                        <img src="/src/assets/avatar.jpg" alt="">
-                                    </div>
-                                    <div class="img-box-hover">
-                                        <ul class="social-icons">
-                                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-github"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-content-box">
-                                    <h3>Jason Miller</h3>
-                                    <p>Creative Director</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="card-speaker">
-                                <div class="card-img-box">
-                                    <div class="img-box">
-                                        <img src="/src/assets/avatar.jpg" alt="">
-                                    </div>
-                                    <div class="img-box-hover">
-                                        <ul class="social-icons">
-                                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-github"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-content-box">
-                                    <h3>Jason Miller</h3>
-                                    <p>Creative Director</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card-speaker">
-                                <div class="card-img-box">
-                                    <div class="img-box">
-                                        <img src="/src/assets/avatar.jpg" alt="">
-                                    </div>
-                                    <div class="img-box-hover">
-                                        <ul class="social-icons">
-                                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-github"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-content-box">
-                                    <h3>Jason Miller</h3>
-                                    <p>Creative Director</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card-speaker">
-                                <div class="card-img-box">
-                                    <div class="img-box">
-                                        <img src="/src/assets/avatar.jpg" alt="">
-                                    </div>
-                                    <div class="img-box-hover">
-                                        <ul class="social-icons">
-                                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-github"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-content-box">
-                                    <h3>Jason Miller</h3>
-                                    <p>Creative Director</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card-speaker">
-                                <div class="card-img-box">
-                                    <div class="img-box">
-                                        <img src="/src/assets/avatar.jpg" alt="">
-                                    </div>
-                                    <div class="img-box-hover">
-                                        <ul class="social-icons">
-                                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                                            <li><a href="#"><i class="bx bxl-github"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-content-box">
-                                    <h3>Jason Miller</h3>
-                                    <p>Creative Director</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section programs -->
+          </div>
+        </div>
 
-        <section class="programs" id="programs">
-            <div class="container">
-                <div class="content-tabs">
-                    <div class="row">
-                        <div class="title-programs">
-                            <h2>Programação</h2>
-                        </div>
-                    </div>
-                    <div class="box-tabs">
-                        <button class="tab-links" onclick="OpenTab(event, 'One')">Quarta, dia 15.</button>
-                        <button class="tab-links" onclick="OpenTab(event, 'Two')">Quinta, dia 16.</button>
-                        <button class="tab-links" onclick="OpenTab(event, 'Three')">Sexta, dia 17.</button>
-                    </div>
-                    <div id="One" class="tab-content">
-                        <div class="day-box">
-                            <div class="profile-box">
-                                <div class="avatar">
-                                    <img src="/src/assets/avatar.jpg" alt="">
-                                </div>
-                                <h3>Jason Miller</h3>
-                            </div>
-                            <div class="info-box">
-                                <span>09:00 am - 10:00 am</span>
-                                <h3>Web Performance For Third Party Scripts</h3>
-                                <p>NA small river named Duden flows by their place and supplies it with the necessary
-                                    regelialia. It is a paradisematic country, in which.</p>
-                            </div>
-                        </div>
-                        <div class="day-box">
-                            <div class="profile-box">
-                                <div class="avatar">
-                                    <img src="/src/assets/avatar.jpg" alt="">
-                                </div>
-                                <h3>Jason Miller</h3>
-                            </div>
-                            <div class="info-box">
-                                <span>09:00 am - 10:00 am</span>
-                                <h3>Web Performance For Third Party Scripts</h3>
-                                <p>NA small river named Duden flows by their place and supplies it with the necessary
-                                    regelialia. It is a paradisematic country, in which.</p>
-                            </div>
-                        </div>
-                        <div class="day-box">
-                            <div class="profile-box">
-                                <div class="avatar">
-                                    <img src="/src/assets/avatar.jpg" alt="">
-                                </div>
-                                <h3>Jason Miller</h3>
-                            </div>
-                            <div class="info-box">
-                                <span>09:00 am - 10:00 am</span>
-                                <h3>Web Performance For Third Party Scripts</h3>
-                                <p>NA small river named Duden flows by their place and supplies it with the necessary
-                                    regelialia. It is a paradisematic country, in which.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="Two" class="tab-content">
-                        <div class="day-box">
-                            <div class="profile-box">
-                                <div class="avatar">
-                                    <img src="/src/assets/avatar.jpg" alt="">
-                                </div>
-                                <h3>Jason Miller</h3>
-                            </div>
-                            <div class="info-box">
-                                <span>09:00 am - 10:00 am</span>
-                                <h3>Web Performance For Third Party Scripts</h3>
-                                <p>NA small river named Duden flows by their place and supplies it with the necessary
-                                    regelialia. It is a paradisematic country, in which.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="Three" class="tab-content">
-                        <div class="day-box">
-                            <div class="profile-box">
-                                <div class="avatar">
-                                    <img src="/src/assets/avatar.jpg" alt="">
-                                </div>
-                                <h3>Jason Miller</h3>
-                            </div>
-                            <div class="info-box">
-                                <span>09:00 am - 10:00 am</span>
-                                <h3>Web Performance For Third Party Scripts</h3>
-                                <p>NA small river named Duden flows by their place and supplies it with the necessary
-                                    regelialia. It is a paradisematic country, in which.</p>
-                            </div>
-                        </div>
-                        <div class="day-box">
-                            <div class="profile-box">
-                                <div class="avatar">
-                                    <img src="/src/assets/avatar.jpg" alt="">
-                                </div>
-                                <h3>Jason Miller</h3>
-                            </div>
-                            <div class="info-box">
-                                <span>09:00 am - 10:00 am</span>
-                                <h3>Web Performance For Third Party Scripts</h3>
-                                <p>NA small river named Duden flows by their place and supplies it with the necessary
-                                    regelialia. It is a paradisematic country, in which.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <li><a href="#about">O Evento</a></li>
+          <li><a href="#speakers">Palestrantes</a></li>
+          <li><a href="#programs">Programação</a></li>
+          <li><a href="#questions">Perguntas</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <li><a href="#" class="btn-ticket">Inscreva-se</a></li>
+        </div>
+      </header>
+      <!-- section event counter -->
+      <section class="event-counter">
+        <div class="container">
+          <div class="content-event">
+            <div class="event-counter-info">
+              <h2>CaisTech 2021</h2>
+              <h5>09 a 11 de Agosto, 2021</h5>
+              <p>
+                <i class="bx bxl-youtube"></i>Através do Youtube do CaisTech.
+              </p>
             </div>
-        </section>
+            <div class="event-counter-timer">
+              <div class="counter-box">
+                <h3 class="time"><span id="days"></span></h3>
+                <span class="text">Dias</span>
+              </div>
+              <div class="counter-box">
+                <h3 class="time"><span id="hours"></span></h3>
+                <span class="text">Horas</span>
+              </div>
+              <div class="counter-box">
+                <h3 class="time"><span id="minutes"></span></h3>
+                <span class="text">Minutos</span>
+              </div>
+              <div class="counter-box">
+                <h3 class="time"><span id="seconds"></span></h3>
+                <span class="text">Segundos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section about -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="content-about">
+            <div class="row">
+              <div class="col-md">
+                <div class="about-img">
+                  <img
+                    src="/src/assets/img-about.jpg"
+                    alt="CaisTech - Floriano"
+                  />
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="about-info">
+                  <span>Sobre nós</span>
+                  <h2>O Evento</h2>
+                  <p>
+                    O Congresso Anual de Informática do Sul do Piauí (CAIS TECH)
+                    é um evento de cunho científico, de realização anual, que
+                    tem como objetivo reunir profissionais de TI, tanto no
+                    âmbito federal, quanto no empresarial, para expor tendências
+                    que estão surgindo neste eixo de mercado.
+                  </p>
+                  <p>
+                    Na sua terceira edição, contará com graduandos do curso de
+                    Tecnologia em Análise e Desenvolvimento de Sistemas do IFPI
+                    Campus Floriano, professores da rede federal brasileira e
+                    dos Estados Unidos.
+                  </p>
+                  <p>
+                    Tudo acontecerá no IFPI Campus Floriano, local já consagrado
+                    pela excelência em ensino, estrutura e por apoio a educação,
+                    e eventos que agreguem as pessoas. Serão três dias – 09 a 11
+                    de agosto de 2021 – de imersão em novas tecnologias, novos
+                    métodos de desenvolvimento, de se relacionar e de obter
+                    ideias empreendedoras no atual cenário brasileiro.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section speakers -->
+      <section class="speakers" id="speakers">
+        <div class="container">
+          <div class="content-speakers">
+            <div class="row">
+              <div class="title-speakers">
+                <span>Palestrantes</span>
+                <h2>Quem irá palestrar</h2>
+              </div>
+            </div>
+            <div class="row padding-bottom-56px">
+              <div class="col-md-4">
+                <div class="card-speaker">
+                  <div class="card-img-box">
+                    <div class="img-box">
+                      <img src="/src/assets/avatar.jpg" alt="" />
+                    </div>
+                    <div class="img-box-hover">
+                      <ul class="social-icons">
+                        <li>
+                          <a href="#"><i class="bx bxl-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-instagram"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-github"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-content-box">
+                    <h3>Jason Miller</h3>
+                    <p>Creative Director</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card-speaker">
+                  <div class="card-img-box">
+                    <div class="img-box">
+                      <img src="/src/assets/avatar.jpg" alt="" />
+                    </div>
+                    <div class="img-box-hover">
+                      <ul class="social-icons">
+                        <li>
+                          <a href="#"><i class="bx bxl-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-instagram"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-github"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-content-box">
+                    <h3>Jason Miller</h3>
+                    <p>Creative Director</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card-speaker">
+                  <div class="card-img-box">
+                    <div class="img-box">
+                      <img src="/src/assets/avatar.jpg" alt="" />
+                    </div>
+                    <div class="img-box-hover">
+                      <ul class="social-icons">
+                        <li>
+                          <a href="#"><i class="bx bxl-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-instagram"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-github"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-content-box">
+                    <h3>Jason Miller</h3>
+                    <p>Creative Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card-speaker">
+                  <div class="card-img-box">
+                    <div class="img-box">
+                      <img src="/src/assets/avatar.jpg" alt="" />
+                    </div>
+                    <div class="img-box-hover">
+                      <ul class="social-icons">
+                        <li>
+                          <a href="#"><i class="bx bxl-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-instagram"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-github"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-content-box">
+                    <h3>Jason Miller</h3>
+                    <p>Creative Director</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card-speaker">
+                  <div class="card-img-box">
+                    <div class="img-box">
+                      <img src="/src/assets/avatar.jpg" alt="" />
+                    </div>
+                    <div class="img-box-hover">
+                      <ul class="social-icons">
+                        <li>
+                          <a href="#"><i class="bx bxl-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-instagram"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-github"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-content-box">
+                    <h3>Jason Miller</h3>
+                    <p>Creative Director</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card-speaker">
+                  <div class="card-img-box">
+                    <div class="img-box">
+                      <img src="/src/assets/avatar.jpg" alt="" />
+                    </div>
+                    <div class="img-box-hover">
+                      <ul class="social-icons">
+                        <li>
+                          <a href="#"><i class="bx bxl-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-instagram"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="bx bxl-github"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-content-box">
+                    <h3>Jason Miller</h3>
+                    <p>Creative Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section programs -->
 
-        <!-- section submission -->
-        <!-- <section class="submission">
+      <section class="programs" id="programs">
+        <div class="container">
+          <div class="content-tabs">
+            <div class="row">
+              <div class="title-programs">
+                <span>Cronograma</span>
+                <h2>Nossa Programação</h2>
+              </div>
+            </div>
+            <div class="box-tabs">
+              <button
+                class="btn tab-links"
+                style="
+                  border-radius: 10px 0 0 10px;
+                  border-right: 1px solid #ce0063;
+                "
+                onclick="OpenTab(event, 'One')"
+              >
+                <p>Segunda-Feira</p>
+                <span>09 de Agosto de 2021</span>
+              </button>
+              <button
+                class="btn tab-links"
+                style="border-radius: 0px"
+                onclick="OpenTab(event, 'Two')"
+              >
+                <p>Terça-Feira</p>
+                <span>10 de Agosto de 2021</span>
+              </button>
+              <button
+                class="btn tab-links"
+                style="
+                  border-radius: 0 10px 10px 0;
+                  border-left: 1px solid #ce0063;
+                "
+                onclick="OpenTab(event, 'Three')"
+              >
+                <p>Quarta-Feira</p>
+                <span>11 de Agosto de 2021</span>
+              </button>
+            </div>
+            <div id="One" class="tab-content">
+              <div class="day-box">
+                <div class="profile-box">
+                  <div class="avatar">
+                    <img src="/src/assets/avatar.jpg" alt="" />
+                  </div>
+                  <h3>Jason Miller</h3>
+                </div>
+                <div class="info-box">
+                  <span>09:00 am - 10:00 am</span>
+                  <h3>Web Performance For Third Party Scripts</h3>
+                  <p>
+                    NA small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which.
+                  </p>
+                </div>
+              </div>
+              <div class="day-box">
+                <div class="profile-box">
+                  <div class="avatar">
+                    <img src="/src/assets/avatar.jpg" alt="" />
+                  </div>
+                  <h3>Jason Miller</h3>
+                </div>
+                <div class="info-box">
+                  <span>09:00 am - 10:00 am</span>
+                  <h3>Web Performance For Third Party Scripts</h3>
+                  <p>
+                    NA small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which.
+                  </p>
+                </div>
+              </div>
+              <div class="day-box">
+                <div class="profile-box">
+                  <div class="avatar">
+                    <img src="/src/assets/avatar.jpg" alt="" />
+                  </div>
+                  <h3>Jason Miller</h3>
+                </div>
+                <div class="info-box">
+                  <span>09:00 am - 10:00 am</span>
+                  <h3>Web Performance For Third Party Scripts</h3>
+                  <p>
+                    NA small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="Two" class="tab-content">
+              <div class="day-box">
+                <div class="profile-box">
+                  <div class="avatar">
+                    <img src="/src/assets/avatar.jpg" alt="" />
+                  </div>
+                  <h3>Jason Miller</h3>
+                </div>
+                <div class="info-box">
+                  <span>09:00 am - 10:00 am</span>
+                  <h3>Web Performance For Third Party Scripts</h3>
+                  <p>
+                    NA small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="Three" class="tab-content">
+              <div class="day-box">
+                <div class="profile-box">
+                  <div class="avatar">
+                    <img src="/src/assets/avatar.jpg" alt="" />
+                  </div>
+                  <h3>Jason Miller</h3>
+                </div>
+                <div class="info-box">
+                  <span>09:00 am - 10:00 am</span>
+                  <h3>Web Performance For Third Party Scripts</h3>
+                  <p>
+                    NA small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which.
+                  </p>
+                </div>
+              </div>
+              <div class="day-box">
+                <div class="profile-box">
+                  <div class="avatar">
+                    <img src="/src/assets/avatar.jpg" alt="" />
+                  </div>
+                  <h3>Jason Miller</h3>
+                </div>
+                <div class="info-box">
+                  <span>09:00 am - 10:00 am</span>
+                  <h3>Web Performance For Third Party Scripts</h3>
+                  <p>
+                    NA small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section submission -->
+      <!-- <section class="submission">
             <div class="container">
                 <div class="content-submission">
                     <div class="row">
@@ -484,115 +556,146 @@
                 </div>
             </div>
         </section> -->
-        <!-- section common questions -->
-        <section class="questions" id="questions">
-            <div class="container">
-                <div class="content-questions">
-                    <div class="row">
-                        <div class="title-questions">
-                            <h2>Perguntas Frequêntes</h2>
-                        </div>
-                    </div>
-                    <div class="box-questions">
-                        <button type="button" class="collapsible">O que é o Cais Tech?</button>
-                        <div class="box-answers">
-                            <p>É o Congresso Anual de Informática do Sul do Piauí. Um evento que busca disseminar a
-                                tecnologia, informática e inovação.</p>
-                        </div>
-                    </div>
-                    <div class="box-questions">
-                        <button type="button" class="collapsible">Quando ocorrerá o evento?</button>
-                        <div class="box-answers">
-                            <p>Este ano o evento acontecerá de 13 a 15 de Março de 2020.</p>
-                        </div>
-                    </div>
-                    <div class="box-questions">
-                        <button type="button" class="collapsible">Qual o valor das inscrições?</button>
-                        <div class="box-answers">
-                            <p>O valor pode variar de acordo com o lote e com o tipo (Simples ou Caravana).</p>
-                        </div>
-                    </div>
-                    <div class="box-questions">
-                        <button type="button" class="collapsible">O que eu poderei ver durante o evento?</button>
-                        <div class="box-answers">
-                            <p>Neste ano o evento tem o tema de “A Guerra dos Bits:Mercado vs Academia”, com isso
-                                traremos palestras, oficinas, minicursos, campeonatos e entretenimento com o “Cais Beer”
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box-questions">
-                        <button type="button" class="collapsible">Até quando vai o primeiro lote?</button>
-                        <div class="box-answers">
-                            <p>O primeiro lote vai até o dia 24 de fevereiro de 2019</p>
-                        </div>
-                    </div>
-                    <div class="box-questions">
-                        <button type="button" class="collapsible">Eu posso submeter artigos?</button>
-                        <div class="box-answers">
-                            <p>Sim</p>
-                        </div>
-                    </div>
-                    <div class="box-questions">
-                        <button type="button" class="collapsible">Vão ter experiências internacionais?</button>
-                        <div class="box-answers">
-                            <p>Sim, esse ano faremos algumas oficinas e meet and greet</p>
-                        </div>
-                    </div>
-                    <div class="box-questions">
-                        <button type="button" class="collapsible">E quanto aos artigos, o evento terá anais?</button>
-                        <div class="box-answers">
-                            <p>Sim, os anais deste ano serão disponibilizados online</p>
-                        </div>
-                    </div>
-                    <div class="box-questions">
-                        <button type="button" class="collapsible">E tem algum brinde?</button>
-                        <div class="box-answers">
-                            <p>Aos primeiros 20 inscritos participarão de um sorteio exclusivo de um óculos VR. Os
-                                demais ganharão botons do evento e outras coisas.</p>
-                        </div>
-                    </div>
-                </div>
+      <!-- section common questions -->
+
+      <section class="questions" id="questions">
+        <div class="container">
+          <div class="content-questions">
+            <div class="row">
+              <div class="title-questions">
+                <span>Dúvidas</span>
+                <h2>Perguntas Frequêntes</h2>
+              </div>
             </div>
-        </section>
-        <!-- section sponsors -->
-        <section class="sponsors" id="sponsors">
-            <div class="container">
-                <div class="content-sponsors">
-                    <div class="box-realization">
-                        <div class="title-realization">
-                            <h2>Realização</h2>
-                        </div>
-                        <div class="img-realization">
-                            <img src="/src/assets/logo-ifpi.png" alt="">
-                        </div>
-                    </div>
-                    <div class="box-sponsors">
-                        <div class="title-sponsors">
-                            <h2>Patrocinadores</h2>
-                        </div>
-                        <div class="img-sponsors">
-                            <img src="/src/assets/logo-1.png" alt="">
-                            <img src="/src/assets/logo.png" alt="">
-                        </div>
-                    </div>
-                    <div class="box-support">
-                        <div class="title-support">
-                            <h2>Suporte</h2>
-                        </div>
-                        <div class="img-support">
-                            <img src="/src/assets/logo-sbc.png" alt="">
-                        </div>
-                    </div>
-                </div>
+            <div class="box-questions">
+              <button type="button" class="collapsible">
+                O que é o Cais Tech?
+              </button>
+              <div class="box-answers">
+                <p>
+                  É o Congresso Anual de Informática do Sul do Piauí. Um evento
+                  que busca disseminar a tecnologia, informática e inovação.
+                </p>
+              </div>
             </div>
-        </section>
-        <!-- section contact -->
-        <section class="contact" id="contact">
+            <div class="box-questions">
+              <button type="button" class="collapsible">
+                Quando ocorrerá o evento?
+              </button>
+              <div class="box-answers">
+                <p>Este ano o evento acontecerá de 13 a 15 de Março de 2020.</p>
+              </div>
+            </div>
+            <div class="box-questions">
+              <button type="button" class="collapsible">
+                Qual o valor das inscrições?
+              </button>
+              <div class="box-answers">
+                <p>
+                  O valor pode variar de acordo com o lote e com o tipo (Simples
+                  ou Caravana).
+                </p>
+              </div>
+            </div>
+            <div class="box-questions">
+              <button type="button" class="collapsible">
+                O que eu poderei ver durante o evento?
+              </button>
+              <div class="box-answers">
+                <p>
+                  Neste ano o evento tem o tema de “A Guerra dos Bits:Mercado vs
+                  Academia”, com isso traremos palestras, oficinas, minicursos,
+                  campeonatos e entretenimento com o “Cais Beer”
+                </p>
+              </div>
+            </div>
+            <div class="box-questions">
+              <button type="button" class="collapsible">
+                Até quando vai o primeiro lote?
+              </button>
+              <div class="box-answers">
+                <p>O primeiro lote vai até o dia 24 de fevereiro de 2019</p>
+              </div>
+            </div>
+            <div class="box-questions">
+              <button type="button" class="collapsible">
+                Eu posso submeter artigos?
+              </button>
+              <div class="box-answers">
+                <p>Sim</p>
+              </div>
+            </div>
+            <div class="box-questions">
+              <button type="button" class="collapsible">
+                Vão ter experiências internacionais?
+              </button>
+              <div class="box-answers">
+                <p>Sim, esse ano faremos algumas oficinas e meet and greet</p>
+              </div>
+            </div>
+            <div class="box-questions">
+              <button type="button" class="collapsible">
+                E quanto aos artigos, o evento terá anais?
+              </button>
+              <div class="box-answers">
+                <p>Sim, os anais deste ano serão disponibilizados online</p>
+              </div>
+            </div>
+            <div class="box-questions">
+              <button type="button" class="collapsible">
+                E tem algum brinde?
+              </button>
+              <div class="box-answers">
+                <p>
+                  Aos primeiros 20 inscritos participarão de um sorteio
+                  exclusivo de um óculos VR. Os demais ganharão botons do evento
+                  e outras coisas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section sponsors -->
+      <section class="sponsors" id="sponsors">
+        <div class="container">
+          <div class="content-sponsors">
+            <div class="box-realization">
+              <div class="title-realization">
+                <h2>Realização</h2>
+              </div>
+              <div class="img-realization">
+                <img src="/src/assets/logo-ifpi.png" alt="" />
+              </div>
+            </div>
+            <div class="box-sponsors">
+              <div class="title-sponsors">
+                <h2>Patrocinadores</h2>
+              </div>
+              <div class="img-sponsors">
+                <img src="/src/assets/logo-1.png" alt="" />
+                <img src="/src/assets/logo.png" alt="" />
+              </div>
+            </div>
+            <div class="box-support">
+              <div class="title-support">
+                <h2>Suporte</h2>
+              </div>
+              <div class="img-support">
+                <img src="/src/assets/logo-sbc.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section contact -->
+      <!-- <section class="contact" id="contact">
             <div class="container">
                 <div class="content-contact">
                     <div class="row">
                         <div class="title-contact">
-                            <h2>Contato</h2>
+                            <span>Fale Conosco</span>
+                            <h2>Nosso Contato</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -611,48 +714,64 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!--  -->
-        <section class="subfooter" id="subfooter">
-            <div class="container">
-                <div class="content-subfooter">
-                    <div class="subfooter-infos">
-                        <div class="subfooter-brand">
-                            <img src="/src/assets/logo-azul.png" alt="logo-cais-tech">
-                        </div>
-                        <div class="subfooter-info">
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown printer took a galley of type and scrambled it to make a type specimen book. It
-                                has survived not only five centuries. </p>
-                        </div>
-                    </div>
-                    <div class="subfooter-links">
-                        <h3>Links de Acesso Rápido</h3>
-                        <ul>
-                            <li><a href="#about">O Evento</a></li>
-                            <li><a href="#speakers">Palestrantes</a></li>
-                            <li><a href="#programs">Programação</a></li>
-                            <li><a href="#questions">Inscrição</a></li>
-                            <li><a href="#sponsors">Realização</a></li>
-                            <li><a href="#contact">Contato</a></li>
-                        </ul>
-                    </div>
-                </div>
+        </section> -->
+      <!--  -->
+      <section class="subfooter" id="contact">
+        <div class="container">
+          <div class="content-subfooter">
+            <div class="subfooter-infos">
+              <div class="subfooter-brand">
+                <img src="/src/assets/brand.png" alt="logo-cais-tech" />
+              </div>
             </div>
-        </section>
-        <footer class="footer" id="footer">
-            <div class="container">
-                <div class="content-footer">
-                    <div class="footer-info">
-                        <p>&copy;2021. Alguns direitos reservados</p>
-                        <!-- <p>Desenvolvido por <a href="https://github.com/pixebit">Pixebit</a></p> -->
-                    </div>
-                    <div class="footer-brand">
-                        <img src="/src/assets/brand.png" alt="logo-cais-tech">
-                    </div>
-                </div>
+            <div class="subfooter-contact">
+              <span>Fale Conosco</span>
+              <h3>Nossos Contatos</h3>
+              <div class="info-contact">
+                <p>Email: contato@caistech.org</p>
+                <p>Local: Instituto Federal do Piauí - IFPI(Campus Floriano)</p>
+              </div>
+              <!-- <h3>Nossas redes sociais</h3> -->
+              <ul class="social-contact-icons">
+                <li>
+                  <a href="#"><i class="bx bxl-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-facebook"></i></a>
+                </li>
+              </ul>
             </div>
-        </footer>
+            <div class="subfooter-links">
+              <span>Nossos Links</span>
+              <h3>Links de Acesso Rápido</h3>
+              <ul>
+                <li><a href="#about">O Evento</a></li>
+                <li><a href="#speakers">Palestrantes</a></li>
+                <li><a href="#programs">Programação</a></li>
+                <li><a href="#questions">Inscrição</a></li>
+                <li><a href="#sponsors">Realização</a></li>
+                <li><a href="#contact">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer" id="footer">
+        <div class="container">
+          <div class="content-footer">
+            <div class="footer-info">
+              <p>&copy;2021. Alguns direitos reservados</p>
+              <!-- <p>Desenvolvido por <a href="https://github.com/pixebit">Pixebit</a></p> -->
+            </div>
+            <div class="footer-brand">
+              <img src="/src/assets/brand.png" alt="logo-cais-tech" />
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
     <script type="text/javascript" src="./src/js/countdown.js"></script>
     <script type="text/javascript" src="./src/js/sidenav.js"></script>
@@ -660,5 +779,6 @@
     <script type="text/javascript" src="./src/js/collapse.js"></script>
     <script type="text/javascript" src="/src/js/particles.js"></script>
     <script type="text/javascript" src="./src/js/app.js"></script>
-</body>
+    <script type="text/javascript" src="./src/js/main.js"></script>
+  </body>
 </html>

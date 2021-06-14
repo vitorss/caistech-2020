@@ -6,12 +6,23 @@
   padding: var(--font-96px) 15px;
 }
 
+.title-questions span {
+  padding: 0 15px var(--font-96px) 15px;
+  text-transform: uppercase;
+  font-size: var(--font-16px);
+  font-weight: 600;
+  color: var(--color-lightblue);
+  letter-spacing: 2px;
+}
+
 .title-questions h2 {
   padding: 0 15px var(--font-96px) 15px;
-  font-size: var(--font-48px);
+  font-size: var(--font-40px);
   font-weight: 800;
   color: var(--color-light);
-  text-shadow: -4px -4px 0px var(--color-pink);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* text-shadow: -4px -4px 0px var(--color-pink); */
 }
 
 .title-questions h2::after {
@@ -20,7 +31,7 @@
   position: absolute;
   width: 150px;
   height: 5px;
-  background: var(--color-pink);
+  background: var(--color-lightblue);
   margin-top: var(--font-32px);
 }
 
@@ -54,7 +65,7 @@
 
 .box-questions .active,
 .collapsible:hover {
-  color: var(--color-pink);
+  color: var(--color-lightblue);
 }
 
 .box-questions {
@@ -96,8 +107,11 @@
 }
 
 @media screen and (max-width: 576px) {
+  .title-questions span {
+    font-size: 14px;
+  }
   .title-questions h2 {
-    font-size: var(--font-32px);
+    font-size: var(--font-28px);
   }
   .collapsible {
     font-size: var(--font-16px);

@@ -4,21 +4,27 @@
 
 .content-contact {
   padding: var(--font-96px) 15px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+}
+
+.title-contact span {
+  padding: 0 15px var(--font-96px) 15px;
+  text-transform: uppercase;
+  font-size: var(--font-16px);
+  font-weight: 600;
+  color: var(--color-lightblue);
+  letter-spacing: 2px;
 }
 
 .title-contact h2 {
   display: flex;
   justify-content: center;
   padding: 0 15px var(--font-96px) 15px;
-  font-size: var(--font-48px);
+  font-size: var(--font-40px);
   font-weight: 700;
   color: var(--color-light);
-  text-shadow: -4px -4px 0px var(--color-pink);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* text-shadow: -4px -4px 0px var(--color-pink); */
 }
 
 .title-contact h2::after {
@@ -27,7 +33,7 @@
   position: absolute;
   width: 150px;
   height: 5px;
-  background: var(--color-pink);
+  background: var(--color-lightblue);
   margin-top: 88px;
 }
 

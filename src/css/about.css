@@ -1,5 +1,5 @@
 .about {
-  background: var(--color-light);
+  background: var(--color-secondary);
 }
 
 .content-about {
@@ -14,12 +14,23 @@
   padding: 0;
 }
 
-.about-info h2 {
-  font-size: var(--font-48px);
-  font-weight: 800;
-  color: var(--color-black);
+.about-info span {
+  font-size: var(--font-16px);
+  font-weight: 600;
+  color: var(--color-pink);
   padding: 0 0px var(--font-80px) 0px;
-  text-shadow: 4px 4px 0px var(--color-lightblue);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-info h2 {
+  font-size: var(--font-40px);
+  font-weight: 800;
+  color: var(--color-light);
+  padding: 0 0px var(--font-80px) 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* text-shadow: 4px 4px 0px var(--color-lightblue); */
 }
 
 .about-info h2::after {
@@ -28,13 +39,13 @@
   position: absolute;
   width: 150px;
   height: 5px;
-  background: var(--color-lightblue);
+  background: var(--color-pink);
   margin-top: var(--font-32px);
 }
 
 .about-info p {
   font-size: var(--font-18px);
-  color: var(--color-secondary);
+  color: var(--color-gray);
   line-height: var(--font-24px);
   margin-bottom: var(--font-16px);
   font-family: "Karla", sans-serif;
@@ -42,7 +53,12 @@
 
 @media screen and (max-width: 576px) {
   .about-info h2 {
-    margin-top: var(--font-32px);
-    font-size: var(--font-32px);
+    font-size: var(--font-28px);
+  }
+  .about-info span {
+    font-size: 14px;
+  }
+  .about-info {
+    padding-top: 32px;
   }
 }

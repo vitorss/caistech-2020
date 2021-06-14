@@ -2,12 +2,12 @@
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   right: 0;
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-black);
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 160px;
   transition: 0.5s;
   text-align: center;
 }
@@ -25,9 +25,27 @@
   color: var(--color-gray);
 }
 
+.sidenav li {
+  display: flex;
+  justify-content: center;
+}
+
+.sidenav li .btn-ticket {
+  margin-top: 10px;
+  padding: 10px 32px;
+  border-radius: 10px;
+  background: var(--color-pink);
+}
+
+.sidenav li .btn-ticket:hover {
+  color: var(--color-light);
+  background: #ce0063;
+}
+
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
+  z-index: 1;
+  top: 30px;
   right: var(--font-24px);
   font-size: var(--font-32px);
   margin-left: var(--font-48px);

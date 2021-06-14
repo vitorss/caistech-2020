@@ -1,13 +1,24 @@
 .programs {
-  background: var(--color-light);
+  background: var(--color-secondary);
+}
+
+.title-programs span {
+  padding: 0 15px var(--font-96px) 15px;
+  text-transform: uppercase;
+  font-size: var(--font-16px);
+  font-weight: 600;
+  color: var(--color-pink);
+  letter-spacing: 2px;
 }
 
 .title-programs h2 {
   padding: 0 15px var(--font-96px) 15px;
-  font-size: var(--font-48px);
+  text-transform: uppercase;
+  font-size: var(--font-40px);
   font-weight: 800;
-  color: var(--color-black);
-  text-shadow: 4px 4px 0px var(--color-lightblue);
+  color: var(--color-light);
+  letter-spacing: 2px;
+  /* text-shadow: 4px 4px 0px var(--color-pink); */
 }
 
 .title-programs h2::after {
@@ -16,9 +27,9 @@
   position: absolute;
   width: 150px;
   height: 5px;
-  background: var(--color-lightblue);
+  background: var(--color-pink);
   margin-top: var(--font-32px);
-}
+} 
 
 .tabs {
   width: 100%;
@@ -31,36 +42,47 @@
 
 .box-tabs {
   width: 100%;
-  border-radius: 7px;
+  border-radius: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .tab-links {
-  width: 32%;
+  width: 100%;
   padding: 20px 30px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   border-collapse: collapse;
   cursor: pointer;
   margin: 0px;
   transition: 0.3s;
-  background: var(--color-lightblue);
+  background: var(--color-pink);
   color: var(--color-light);
-  text-transform: uppercase;
-  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .tab-links:hover {
-  background: #26c0d1;
+  background: #ce0063;
+  color: var(--color-light);
   transition: 0.3s;
 }
 
+.tab-links p {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.tab-links span {
+  font-size: 16px;
+}
+
 .box-tabs .active {
-  background: #26c0d1;
+  background: #ce0063;
   color: var(--color-light);
 }
 
@@ -94,22 +116,22 @@
 
 .day-box {
   width: 100%;
-  border: 1px solid #dee2e6;
-  border-radius: 7px;
+  border: 1px solid #ff007b2d;
+  border-radius: 10px;
   overflow: hidden;
   display: flex;
   margin: 32px 0px 16px 0px;
-  transition: 0.5s;
+  transition: all 0.2s;
 }
 
 .day-box:hover {
-  background: #e6e6e6;
-  transition: 0.3s;
+  background: #ff007b2d;
+  border: 1px solid #ff007b27;
 }
 
 .profile-box {
   width: 280px;
-  border-right: 1px solid #dee2e6;
+  border-right: 1px solid #ff007b2d;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,6 +141,7 @@
 
 .profile-box h3 {
   text-transform: uppercase;
+  color: var(--color-light);
   font-size: var(--font-16px);
 }
 
@@ -135,27 +158,45 @@
   flex-direction: column;
   justify-content: center;
   font-family: "Karla", sans-serif;
+  color: var(--color-light);
 }
 
 .info-box h3 {
+  color: var(--color-pink);
   font-size: var(--font-24px);
   margin-bottom: 12px;
   font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .info-box span {
+  color: var(--color-light);
   text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.info-box p {
+  color: var(--color-gray);
   font-weight: 500;
   margin-bottom: 12px;
 }
 
 @media screen and (max-width: 576px) {
+  .title-programs span {
+    font-size: 14px;
+  }
   .title-programs h2 {
-    font-size: var(--font-32px);
+    font-size: var(--font-28px);
   }
   .box-tabs {
     display: flex;
     flex-direction: column;
+  }
+  .box-tabs button {
+    border-radius: 10px !important;
   }
   .tab-links {
     width: 100%;
@@ -168,8 +209,8 @@
   }
   .profile-box {
     width: 100%;
-    border-right: none;
-    border-bottom: 1px solid var(--color-gray);
+    border-right: 1px solid #ff007b2d;
+    border-bottom: 1px solid #ff007b2d;
   }
   .info-box {
     width: 100%;
@@ -205,8 +246,8 @@
   }
   .profile-box {
     width: 100%;
-    border-right: none;
-    border-bottom: 1px solid var(--color-gray);
+    border-right: 1px solid #ff007b2d;
+    border-bottom: 1px solid #ff007b2d;
   }
   .info-box {
     width: 100%;
@@ -227,7 +268,7 @@
 @media screen and (max-width: 960px) {
   .profile-box {
     width: 100%;
-    border-right: 1px solid var(--color-gray);
+    border-right: 1px solid #ff007b2d;
   }
   .avatar img {
     width: 120px;
