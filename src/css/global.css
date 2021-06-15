@@ -192,13 +192,13 @@ img {
   height: 7px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #f60076;
+  background: #AAAAAA;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #e66892;
+  background: #808080;
 }
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--color-black);
   border-radius: 8px;
 }
