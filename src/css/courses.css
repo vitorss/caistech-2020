@@ -1,12 +1,12 @@
-.speakers {
+.courses {
   background: var(--color-black);
 }
 
-.content-speakers {
+.content-courses {
   padding: var(--font-96px) 15px;
 }
 
-.title-speakers span {
+.title-courses span {
   padding: 0 15px var(--font-96px) 15px;
   text-transform: uppercase;
   font-size: var(--font-16px);
@@ -15,7 +15,7 @@
   letter-spacing: 2px;
 }
 
-.title-speakers h2 {
+.title-courses h2 {
   padding: 0 15px var(--font-96px) 15px;
   text-transform: uppercase;
   font-size: var(--font-40px);
@@ -24,7 +24,7 @@
   letter-spacing: 2px;
 }
 
-.title-speakers h2::after {
+.title-courses h2::after {
   display: block;
   content: "";
   position: absolute;
@@ -83,35 +83,65 @@
   transition: 0.3s;
 }
 
+.card-courses {
+  border: 1px solid #2cdbee2d;
+  transition: all .3s;
+}
+
+.card-courses:hover {
+  box-shadow: inset 0 0 30px 500px rgba(0, 117, 138, 0.185);
+}
+
 .card-content-box {
   text-align: center;
+  padding: 0 18px 18px 24px;
 }
 
 .card-content-box h3 {
+  padding-bottom: 8px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: var(--font-24px);
+  font-size: var(--font-18px);
   font-weight: 900;
   padding-top: var(--font-32px);
-  color: var(--color-lightblue);
+  color: var(--color-light);
   font-family: 'Karla', sans-serif;
 }
 
-.card-content-box p {
+.card-content-box .course-name {
+  line-height: 20px;
   font-size: var(--font-18px);
-  color: var(--color-gray);
+  font-weight: 600;
+  color: var(--color-lightblue);
   padding-top: 8px;
+  padding-bottom: 16px;
   font-family: "Karla", sans-serif;
 }
 
+.card-content-box .course-person {
+  line-height: 20px;
+  font-size: var(--font-16px);
+  color: var(--color-gray);
+  font-family: "Karla", sans-serif;
+  text-align: left;
+}
+
 @media screen and (max-width: 576px) {
-  .content-speakers {
+  .content-courses {
     padding: 40px 8px;
+    margin-bottom: -40px;
   }
-  .title-speakers span {
+  .title-courses span {
     font-size: 14px;
   }
-  .title-speakers h2 {
+  .title-courses h2 {
     font-size: var(--font-28px);
+  }
+  .card-courses {
+    margin: 10px 0;
+  }
+  .card-content-box h3 {
+    font-size: var(--font-24px);
   }
   .card-img-box {
     width: 100%;
@@ -125,14 +155,14 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .title-speakers span {
+  .title-courses span {
     font-size: 14px;
   }
-  .title-speakers h2 {
+  .title-courses h2 {
     padding: 0 15px var(--font-64px) 15px;
     font-size: 32px;
   }
-  .title-speakers h2::after {
+  .title-courses h2::after {
     margin-top: 16px;
   }
 }

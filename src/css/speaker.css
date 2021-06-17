@@ -1,0 +1,147 @@
+.speaker {
+  background: var(--color-secondary);
+}
+
+.content-speaker {
+  padding: var(--font-96px) 15px;
+}
+
+.title-speaker span {
+  padding: 0 15px var(--font-96px) 15px;
+  text-transform: uppercase;
+  font-size: var(--font-16px);
+  font-weight: 600;
+  color: var(--color-pink);
+  letter-spacing: 2px;
+}
+
+.title-speaker h2 {
+  padding: 0 15px var(--font-96px) 15px;
+  text-transform: uppercase;
+  font-size: var(--font-40px);
+  font-weight: 800;
+  color: var(--color-light);
+  letter-spacing: 2px;
+}
+
+.title-speaker h2::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 5px;
+  background: var(--color-pink);
+  margin-top: var(--font-32px);
+}
+
+.info-speaker h2 {
+  margin-bottom: 24px;
+  font-size: var(--font-32px);
+  text-transform: uppercase;
+  color: var(--color-light);
+  font-weight: 800;
+}
+
+.info-speaker .bio-speaker span {
+  text-transform: uppercase;
+  font-size: var(--font-16px);
+  color: var(--color-pink);
+  letter-spacing: 2px;
+}
+
+.info-speaker .bio-speaker p {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  color: var(--color-gray);
+  font-family: 'Karla', sans-serif;
+}
+
+.bio-speaker .speaker-links {
+  display: flex;
+  grid-gap: 20px;
+}
+
+.bio-speaker .speaker-links a i {
+  text-decoration: none;
+  color: var(--color-light);
+  font-size: var(--font-24px);
+  transition: all 0.3s;
+  background: var(--color-pink);
+  padding: 8px;
+  border-radius: 0px;
+}
+
+.bio-speaker .speaker-links a i:hover {
+  box-shadow: inset 2.5em 0 0 0 var(--color-lightblue);
+  color: var(--color-light)
+} 
+
+@media screen and (max-width: 576px) {
+  .content-speaker {
+    padding: 40px 8px;
+  }
+  .title-speaker span {
+    font-size: 14px;
+  }
+  .title-speaker h2 {
+    font-size: var(--font-28px);
+  }
+  .card-speaker {
+    margin: 10px 0;
+  }
+  .speaker-img {
+    padding: 0 0 28px 0;
+  }
+  .info-speaker {
+    padding: 0 0 0 0 !important;
+  }
+  .info-speaker h2 {
+    font-size: 24px;
+  }
+  .s-1 {
+    margin-top: -32px;
+  }
+
+  .grid {
+    display: grid !important;
+    grid-template-areas:
+      "img"
+      "infos"
+      ;
+  }
+  
+  .infos {
+    grid-area: infos;
+  }
+  
+  .img {
+    grid-area: img;
+    margin-bottom: 28px;
+  }
+  
+  .card-content-box h3 {
+    font-size: var(--font-24px);
+  }
+  .card-img-box {
+    width: 100%;
+  }
+  .img-box img {
+    width: 100%;
+  }
+  .card-content-box {
+    margin-bottom: var(--font-32px);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title-speaker span {
+    font-size: 14px;
+  }
+  .title-speaker h2 {
+    padding: 0 15px var(--font-64px) 15px;
+    font-size: 32px;
+  }
+  .title-speaker h2::after {
+    margin-top: 16px;
+  }
+}

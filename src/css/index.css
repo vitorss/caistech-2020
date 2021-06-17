@@ -6,7 +6,7 @@
 @import "/src/css/wrapper.css";
 @import "/src/css/event-counter.css";
 @import "/src/css/about.css";
-@import "/src/css/speakers.css";
+@import "/src/css/courses.css";
 @import "/src/css/programs.css";
 @import "/src/css/submission.css";
 @import "/src/css/questions.css";
@@ -14,3 +14,4 @@
 @import "/src/css/subfooter.css";
 @import "/src/css/footer.css";
 @import "/src/css/sidenav.css";
+@import "/src/css/speaker.css";
