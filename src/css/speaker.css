@@ -53,7 +53,7 @@
   margin-top: 8px;
   margin-bottom: 16px;
   color: var(--color-gray);
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 .bio-speaker .speaker-links {
@@ -73,8 +73,8 @@
 
 .bio-speaker .speaker-links a i:hover {
   box-shadow: inset 2.5em 0 0 0 var(--color-lightblue);
-  color: var(--color-light)
-} 
+  color: var(--color-light);
+}
 
 @media screen and (max-width: 576px) {
   .content-speaker {
@@ -97,28 +97,24 @@
   }
   .info-speaker h2 {
     font-size: 24px;
+    letter-spacing: 1px;
   }
   .s-1 {
     margin-top: -32px;
   }
-
   .grid {
     display: grid !important;
     grid-template-areas:
       "img"
-      "infos"
-      ;
+      "infos";
   }
-  
   .infos {
     grid-area: infos;
   }
-  
   .img {
     grid-area: img;
     margin-bottom: 28px;
   }
-  
   .card-content-box h3 {
     font-size: var(--font-24px);
   }

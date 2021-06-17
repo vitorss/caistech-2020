@@ -92,4 +92,9 @@
     width: 100%;
     margin: 0px 0;
   }
+  .btn-main:hover {
+    background-color: #d30066d2 !important;
+    box-shadow: none;
+    color: var(--color-light);
+  }
 }

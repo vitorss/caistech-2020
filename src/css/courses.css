@@ -99,10 +99,10 @@
 
 .card-content-box h3 {
   padding-bottom: 8px;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   text-transform: uppercase;
   font-size: var(--font-18px);
-  font-weight: 900;
+  font-weight: 800;
   padding-top: var(--font-32px);
   color: var(--color-light);
   font-family: 'Karla', sans-serif;
@@ -142,15 +142,10 @@
   }
   .card-content-box h3 {
     font-size: var(--font-24px);
+    text-align: left;
   }
-  .card-img-box {
-    width: 100%;
-  }
-  .img-box img {
-    width: 100%;
-  }
-  .card-content-box {
-    margin-bottom: var(--font-32px);
+  .card-content-box .course-name {
+    text-align: left;
   }
 }
 
