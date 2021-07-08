@@ -152,6 +152,25 @@ body {
   color: var(--color-light);
 }
 
+.btn-join {
+  display: table;
+  background: var(--color-pink);
+  color: var(--color-light);
+  margin: 20px 0;
+  padding: 10px 25px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 0px;
+  border: none;
+  text-decoration: none !important;
+  transition: all 0.2s;
+}
+.btn-join:hover {
+  background-color: var(--color-lightblue);
+  color: var(--color-light);
+}
+
 .padding-bottom-56px {
   padding-bottom: 56px;
 }

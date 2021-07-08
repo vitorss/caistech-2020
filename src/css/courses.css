@@ -123,7 +123,6 @@
   font-size: var(--font-16px);
   color: var(--color-gray);
   font-family: "Karla", sans-serif;
-  text-align: left;
 }
 
 @media screen and (max-width: 576px) {
@@ -142,10 +141,50 @@
   }
   .card-content-box h3 {
     font-size: var(--font-24px);
-    text-align: left;
   }
-  .card-content-box .course-name {
-    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .content-courses {
+    padding: 40px 8px;
+    margin-bottom: -40px;
+  }
+  .title-courses span {
+    font-size: 14px;
+  }
+  .title-courses h2 {
+    font-size: var(--font-28px);
+  }
+  .card-courses {
+    margin: 10px 0;
+  }
+  .card-content-box h3 {
+    font-size: var(--font-24px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .content-courses .row {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .content-courses {
+    padding: 40px 8px;
+    margin-bottom: -40px;
+    display: flex !important;
+    flex-direction: column;
+  }
+  .title-courses span {
+    font-size: 14px;
+  }
+  .title-courses h2 {
+    font-size: var(--font-28px);
+  }
+  .card-courses {
+    margin: 10px 0;
+  }
+  .card-content-box h3 {
+    font-size: var(--font-24px);
   }
 }
 

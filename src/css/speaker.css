@@ -128,6 +128,58 @@
     margin-bottom: var(--font-32px);
   }
 }
+@media screen and (max-width: 768px) {
+  .content-speaker {
+    padding: 40px 8px;
+  }
+  .title-speaker span {
+    font-size: 14px;
+  }
+  .title-speaker h2 {
+    font-size: var(--font-28px);
+  }
+  .card-speaker {
+    margin: 10px 0;
+  }
+  .speaker-img {
+    padding: 0 0 28px 0;
+  }
+  .info-speaker {
+    padding: 0 0 0 0 !important;
+  }
+  .info-speaker h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  .s-1 {
+    margin-top: -32px;
+  }
+  .grid {
+    display: grid !important;
+    grid-template-areas:
+      "img"
+      "infos";
+  }
+  .infos {
+    grid-area: infos;
+  }
+  .img {
+    grid-area: img;
+    margin-bottom: 28px;
+  }
+  .card-content-box h3 {
+    font-size: var(--font-24px);
+  }
+  .card-img-box {
+    width: 100%;
+  }
+  .img-box img {
+    width: 100%;
+  }
+  .card-content-box {
+    margin-bottom: var(--font-32px);
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .title-speaker span {

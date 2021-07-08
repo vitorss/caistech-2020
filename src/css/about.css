@@ -77,6 +77,16 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .content-about .row {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .about-info {
+    padding-top: 32px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .about-info span {
     font-size: 14px;
