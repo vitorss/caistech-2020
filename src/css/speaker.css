@@ -57,11 +57,22 @@
 }
 
 .bio-speaker .speaker-links {
-  display: flex;
+  display: grid;
+  align-items: center;
+}
+
+.speaker-links h6 {
+  color: var(--color-light);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.speaker-links .links {
+  margin-top: 20px;
   grid-gap: 20px;
 }
 
-.bio-speaker .speaker-links a i {
+.bio-speaker .speaker-links .links a i {
   text-decoration: none;
   color: var(--color-light);
   font-size: var(--font-24px);
@@ -71,7 +82,7 @@
   border-radius: 0px;
 }
 
-.bio-speaker .speaker-links a i:hover {
+.bio-speaker .speaker-links .links a i:hover {
   box-shadow: inset 2.5em 0 0 0 var(--color-lightblue);
   color: var(--color-light);
 }
