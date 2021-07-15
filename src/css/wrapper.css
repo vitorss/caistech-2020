@@ -63,7 +63,7 @@
     justify-content: center;
   }
   .content-area-wrapper h1 {
-    font-size: var(--font-32px);
+    font-size: var(--font-32px) !important;
     justify-content: center;
     text-align: center;
   }
@@ -89,6 +89,7 @@
   .buttons .btn-main {
     width: 100%;
     margin: 0px 0;
+    font-size: 14px;
   }
   .btn-main:hover {
     background-color: #d30066d2 !important;

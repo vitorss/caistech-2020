@@ -36,11 +36,14 @@
 
 .register-video iframe {
   padding: 0 15px;
+  width: 550px;
+  height: 320px;
 }
 
 @media screen and (max-width: 576px) {
   .register-content {
     margin-bottom: -40px;
+    padding: 56px 0;
   }
   .title-register span {
     font-size: 14px;
@@ -51,6 +54,11 @@
   }
   .title-register h2::after {
     margin-top: 20px;
+  }
+  .register-video iframe {
+    padding: 0 15px;
+    width: 100%;
+    height: 320px;
   }
 }
 
