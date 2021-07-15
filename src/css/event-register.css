@@ -62,9 +62,9 @@
 }
 
 @media screen and (max-width: 768px) {
-    .register-content {
-        margin-bottom: -40px;
-      }
+  .register-content {
+    margin-bottom: -40px;
+  }
   .title-register span {
     font-size: 14px;
   }
