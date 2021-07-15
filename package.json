@@ -1,21 +1,21 @@
 {
-  "name": "caistech-2020",
+  "name": "caistech-2021",
   "version": "1.0.0",
-  "description": "caistech ifpi 2020",
+  "description": "caistech ifpi 2021",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vitorss/caistech-2020.git"
+    "url": "git+https://github.com/vitorss/caistech-2021.git"
   },
   "author": "vitorss",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vitorss/caistech-2020/issues"
+    "url": "https://github.com/vitorss/caistech-2021/issues"
   },
-  "homepage": "https://github.com/vitorss/caistech-2020#readme",
+  "homepage": "https://github.com/vitorss/caistech-2021#readme",
   "dependencies": {
     "boxicons": "^2.0.5"
   }
