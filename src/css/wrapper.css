@@ -98,3 +98,29 @@
     color: var(--color-light);
   }
 }
+@media screen and (max-width: 768px) {
+  .wrapper {
+    height: 550px;
+  }
+  .content-area {
+    justify-content: center;
+  }
+  .content-area-wrapper h1 {
+    font-size: var(--font-48px);
+    justify-content: center;
+    text-align: center;
+  }
+  .content-area-wrapper h1::after {
+    content: none;
+  }
+  .content-area-wrapper h6 {
+    width: 100%;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+  }
+  .content-area-wrapper p {
+    text-align: center;
+  }
+}
