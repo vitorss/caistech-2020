@@ -32,9 +32,18 @@
     font-family: 'Karla', sans-serif;
 }
 
-.event-counter-info p i {
+.event-counter-info a p i {
     margin-right: 5px;
     font-size: var(--font-24px);
+}
+
+.event-counter-info a p {
+    color: rgba(137, 196, 245, 0.979);
+}
+
+.event-counter-info a p:hover {
+    color: rgba(79, 169, 243, 0.979);
+    text-decoration: none;
 }
 
 .event-counter-timer {
