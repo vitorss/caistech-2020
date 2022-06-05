@@ -3,7 +3,7 @@
   padding: 15px 0;
   z-index: 1000;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(6, 0, 24, 0.8);
   transition: all 0.3s;
 }
 
@@ -34,21 +34,21 @@
 }
 
 .navbar-menu ul li a:hover {
-  color: var(--color-pink);
+  color: var(--color-lightblue);
   transition: all 0.3s;
 }
 
 .navbar-menu ul li .btn-ticket {
-  padding: 10px 32px;
-  border-radius: 0px;
-  background: var(--color-pink);
+  padding: 16px 32px;
+  border-radius: 10px;
+  background: var(--color-lightblue);
   transition: all 0.3s;
 }
 
 .navbar-menu ul li .btn-ticket:hover,
 .btn-ticket:focus {
   color: var(--color-light);
-  box-shadow: inset 12.5em 0 0 0 var(--color-lightblue);
+  box-shadow: inset 12.5em 0 0 0 #1fa86b;
   transition: all 0.3s;
 }
 

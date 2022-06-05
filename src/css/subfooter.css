@@ -23,7 +23,7 @@
 }
 
 .subfooter-contact span {
-  color: var(--color-pink);
+  color: var(--color-lightblue);
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -55,17 +55,17 @@
 
 .subfooter-contact .social-contact-icons li a i {
   text-decoration: none;
-  color: var(--color-light);
+  color: var(--color-black);
   font-size: var(--font-32px);
   transition: all 0.3s;
-  background: var(--color-pink);
-  padding: 8px;
-  border-radius: 0px;
+  background: var(--color-light);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .subfooter-contact .social-contact-icons li a i:hover {
   box-shadow: inset 2.5em 0 0 0 var(--color-lightblue);
-  color: var(--color-light)
+  color: var(--color-light);
 }
 
 .subfooter-links {
@@ -73,7 +73,7 @@
 }
 
 .subfooter-links span {
-  color: var(--color-pink);
+  color: var(--color-lightblue);
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -98,12 +98,12 @@
   font-weight: 500;
   text-decoration: none;
   font-family: "Karla", sans-serif;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .subfooter-links ul li a:hover {
-    color: var(--color-pink);
-  }
+  color: var(--color-lightblue);
+}
 
 .subfooter-networks {
   flex: 1;

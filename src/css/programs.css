@@ -7,7 +7,7 @@
   text-transform: uppercase;
   font-size: var(--font-16px);
   font-weight: 600;
-  color: var(--color-pink);
+  color: var(--color-lightblue);
   letter-spacing: 2px;
 }
 
@@ -26,9 +26,9 @@
   position: absolute;
   width: 150px;
   height: 5px;
-  background: var(--color-pink);
+  background: var(--color-lightblue);
   margin-top: var(--font-32px);
-} 
+}
 
 .tabs {
   width: 100%;
@@ -55,7 +55,7 @@
   cursor: pointer;
   margin: 0px;
   transition: 0.3s;
-  background: var(--color-pink);
+  background: var(--color-lightblue);
   color: var(--color-light);
   display: flex;
   align-items: center;
@@ -64,7 +64,7 @@
 }
 
 .tab-links:hover {
-  background: #ce0063;
+  background: #26c27c;
   color: var(--color-light);
   transition: 0.3s;
 }
@@ -81,7 +81,7 @@
 }
 
 .box-tabs .active {
-  background: #ce0063;
+  background: var(--color-lightblue);
   color: var(--color-light);
 }
 
@@ -117,9 +117,9 @@
   width: 100%;
   max-height: 250px;
   min-height: 220px;
-  background: #ff007b15;
-  border: 1px solid #ff007b2d;
-  border-radius: 0px;
+  background: #22da8715;
+  border: 1px solid #22da872d;
+  border-radius: 10px;
   overflow: hidden;
   display: flex;
   margin: 32px 0px 16px 0px;
@@ -127,13 +127,13 @@
 }
 
 .day-box:hover {
-  background: #ff007b2d;
-  border: 1px solid #ff007b27;
+  background: #22da872d;
+  border: 1px solid #22da8727;
 }
 
 .profile-box {
   min-width: 250px;
-  border-right: 1px solid #ff007b2d;
+  border-right: 1px solid #22da872d;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,6 +164,7 @@
   justify-content: center;
   font-family: "Karla", sans-serif;
   color: var(--color-light);
+  border-radius: 10px;
 }
 
 .info-box .type {
@@ -174,11 +175,13 @@
 .info-box .type span {
   padding: 4px 8px;
   font-size: 14px;
-  background-color: #ce0063;
+  background-color: #ffffff;
+  color: var(--color-black);
+  border-radius: 5px;
 }
 
 .info-box h3 {
-  color: var(--color-pink);
+  color: var(--color-lightblue);
   font-size: var(--font-18px);
   margin-bottom: 8px;
   font-family: "Rubik", sans-serif;
@@ -230,7 +233,7 @@
   .profile-box {
     width: 100%;
     border-right: none;
-    border-bottom: 1px solid #ff007b2d;
+    border-bottom: 1px solid #22da872d;
   }
   .info-box {
     width: 100%;
@@ -265,8 +268,8 @@
   }
   .profile-box {
     width: 100%;
-    border-right: 1px solid #ff007b2d;
-    border-bottom: 1px solid #ff007b2d;
+    border-right: 1px solid #22da872d;
+    border-bottom: 1px solid #22da872d;
   }
   .info-box {
     width: 100%;
@@ -301,7 +304,7 @@
   }
   .profile-box {
     width: 100%;
-    border-right: 1px solid #ff007b2d;
+    border-right: 1px solid #22da872d;
   }
   .avatar img {
     width: 120px;
@@ -310,8 +313,8 @@
   }
   .profile-box {
     width: 100%;
-    border-right: 1px solid #ff007b2d;
-    border-bottom: 1px solid #ff007b2d;
+    border-right: 1px solid #22da872d;
+    border-bottom: 1px solid #22da872d;
   }
   .info-box {
     width: 100%;

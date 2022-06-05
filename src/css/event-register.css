@@ -11,7 +11,7 @@
   text-transform: uppercase;
   font-size: var(--font-16px);
   font-weight: 600;
-  color: var(--color-pink);
+  color: var(--color-lightblue);
   letter-spacing: 2px;
 }
 
@@ -30,7 +30,7 @@
   position: absolute;
   width: 150px;
   height: 5px;
-  background: var(--color-pink);
+  background: var(--color-lightblue);
   margin-top: var(--font-32px);
 }
 

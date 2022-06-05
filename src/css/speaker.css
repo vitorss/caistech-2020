@@ -11,7 +11,7 @@
   text-transform: uppercase;
   font-size: var(--font-16px);
   font-weight: 600;
-  color: var(--color-pink);
+  color: var(--color-lightblue);
   letter-spacing: 2px;
 }
 
@@ -30,13 +30,14 @@
   position: absolute;
   width: 150px;
   height: 5px;
-  background: var(--color-pink);
+  background: var(--color-lightblue);
   margin-top: var(--font-32px);
 }
 
 .info-speaker h2 {
   margin-bottom: 24px;
   font-size: var(--font-32px);
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--color-light);
   font-weight: 800;
@@ -45,7 +46,8 @@
 .info-speaker .bio-speaker span {
   text-transform: uppercase;
   font-size: var(--font-16px);
-  color: var(--color-pink);
+  font-weight: 600;
+  color: var(--color-lightblue);
   letter-spacing: 2px;
 }
 
@@ -62,7 +64,9 @@
 }
 
 .speaker-links h6 {
-  color: var(--color-light);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-lightblue);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -74,17 +78,21 @@
 
 .bio-speaker .speaker-links .links a i {
   text-decoration: none;
-  color: var(--color-light);
+  color: var(--color-black);
   font-size: var(--font-24px);
   transition: all 0.3s;
-  background: var(--color-pink);
-  padding: 8px;
-  border-radius: 0px;
+  background: var(--color-light);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .bio-speaker .speaker-links .links a i:hover {
   box-shadow: inset 2.5em 0 0 0 var(--color-lightblue);
   color: var(--color-light);
+}
+
+.speaker-img img {
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 576px) {

@@ -39,6 +39,7 @@
   overflow: hidden;
   border-radius: 0px;
   transition: 0.5s;
+  border-radius: 10px;
 }
 
 .img-box img {
@@ -49,7 +50,7 @@
 .img-box-hover {
   width: 100%;
   height: 100%;
-  background: #2cdbee21; 
+  background: #2cdbee21;
   position: absolute;
   top: 0;
   display: flex;
@@ -85,7 +86,8 @@
 
 .card-courses {
   border: 1px solid #2cdbee2d;
-  transition: all .3s;
+  transition: all 0.3s;
+  border-radius: 10px;
 }
 
 .card-courses:hover {
@@ -105,7 +107,7 @@
   font-weight: 800;
   padding-top: var(--font-32px);
   color: var(--color-light);
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 .card-content-box .course-name {
