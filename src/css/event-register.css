@@ -35,9 +35,10 @@
 }
 
 .register-video iframe {
-  padding: 0 15px;
-  width: 550px;
-  height: 320px;
+  margin-left: 15px;
+  width: 650px;
+  height: 550px;
+  border-radius: 7px;
 }
 
 @media screen and (max-width: 576px) {

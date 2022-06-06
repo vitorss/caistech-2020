@@ -39,7 +39,7 @@
   overflow: hidden;
   border-radius: 0px;
   transition: 0.5s;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .img-box img {
@@ -87,7 +87,7 @@
 .card-courses {
   border: 1px solid #2cdbee2d;
   transition: all 0.3s;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .card-courses:hover {

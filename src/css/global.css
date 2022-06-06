@@ -42,7 +42,7 @@ body {
   right: 0px;
   padding: 8px 10px;
   margin: 14px;
-  border-radius: 10px;
+  border-radius: 7px;
   background: var(--color-light);
   transition: all 0.3s;
 }
@@ -78,14 +78,12 @@ body {
 :root {
   /* paleta de cores */
   --color-primary: #2a2365;
-  --color-pink: #f60076;
+  --color-purple: #6e25ce;
   --color-lightblue: #1fc47a;
   --color-secondary: #161530;
   --color-black: #111024;
   --color-gray: #cecdea;
   --color-light: #f3f7f4;
-  --color-gradient: linear-gradient(120deg, #6300d4 0%, #fa3293 100%);
-  /* --color-gradient: linear-gradient(127deg, rgba(242, 30, 125, 1) 25%, rgba(32, 29, 109, 1) 75%); */
   /* -- */
   /* tamanhos de fontes e espaçamentos */
   --font-16px: 1rem;
@@ -117,56 +115,40 @@ body {
 
 .btn-main {
   width: 200px;
-  background: var(--color-light);
-  color: var(--color-black);
+  background: var(--color-purple);
+  color: var(--color-light);
   padding: 16px 28px;
   font-weight: 700;
   font-size: var(--font-16px);
   text-transform: uppercase;
-  border-radius: 10px;
+  border-radius: 7px;
   border: none;
   transition: all 0.2s ease-in-out;
 }
 
 .btn-main:hover {
-  box-shadow: inset 12.5em 0 0 0 var(--color-lightblue);
-  color: var(--color-light);
-}
-
-.btn-tab {
-  background: var(--color-primary-dark);
-  color: var(--color-light);
-  padding: 10px 25px;
-  font-weight: 500;
-  font-size: var(--font-16px);
-  border-radius: 3px;
-  border: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.btn-tab:hover {
-  background: var(--color-primary);
+  box-shadow: inset 0 0 0 3em var(--color-lightblue);
   color: var(--color-light);
 }
 
 .btn-join {
   display: table;
-  background: var(--color-light);
-  color: var(--color-black);
+  background: var(--color-purple);
+  color: var(--color-light);
   margin: 20px 0;
   padding: 16px 28px;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  border-radius: 10px;
+  border-radius: 7px;
   border: none;
   text-decoration: none !important;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 .btn-join:hover {
-  background-color: var(--color-lightblue);
-  color: var(--color-black);
+  box-shadow: inset 0 0 0 3em var(--color-lightblue);
+  color: var(--color-light);
 }
 
 .padding-bottom-56px {
@@ -196,7 +178,7 @@ img {
   content: "";
   width: 100%;
   height: 100%;
-  background: rgba(0, 2, 37, 0.5);
+  background: rgba(0, 2, 37, 0.342);
 }
 
 @media screen and (max-width: 576px) {

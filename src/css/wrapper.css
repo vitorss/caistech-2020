@@ -27,23 +27,24 @@
 }
 
 .content-area-wrapper h1 {
+  display: flex;
   font-size: var(--font-64px);
   font-weight: 900;
   color: var(--color-light);
   max-width: 700px;
 }
 
-/* .content-area-wrapper h1::after {
+.content-area-wrapper h1::after {
   position: absolute;
   content: "";
-  height: 15px;
-  width: 580px;
+  height: 20px;
+  width: 530px;
   margin-left: 0px;
-  margin-top: 40px;
+  margin-top: 30px;
   z-index: -1;
-  background: var(--color-black);
-  box-shadow: 0 15px 0 0 var(--color-lightblue);
-} */
+  background: var(--color-purple);
+  box-shadow: 0 20px 0 0 var(--color-lightblue);
+}
 
 .content-area-wrapper h6 {
   width: 470px;

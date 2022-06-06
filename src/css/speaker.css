@@ -83,7 +83,7 @@
   transition: all 0.3s;
   background: var(--color-light);
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .bio-speaker .speaker-links .links a i:hover {
@@ -92,7 +92,7 @@
 }
 
 .speaker-img img {
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 @media screen and (max-width: 576px) {

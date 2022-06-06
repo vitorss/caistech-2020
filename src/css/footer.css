@@ -19,12 +19,12 @@
 }
 
 .footer-brand {
-  width: 80px;
+  width: 70px;
 }
 
 @media screen and (max-width: 576px) {
   .footer-info p {
-      font-size: 14px;
+    font-size: 14px;
   }
   .footer-brand {
     width: 60px;
