@@ -187,8 +187,8 @@
   color: var(--color-lightblue);
   font-size: var(--font-18px);
   margin-bottom: 8px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -385,4 +385,12 @@
 .b3 {
   border-radius: 0 7px 7px 0;
   border-left: 1px solid #5d1db162;
+}
+
+.prog-a {
+  font-size: 24px;
+  color: #22da87;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
