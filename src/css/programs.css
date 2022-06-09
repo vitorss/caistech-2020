@@ -250,6 +250,17 @@
   .info-box h3 {
     font-size: 16px !important;
   }
+  .b1 {
+    border-radius: 7px !important;
+  }
+
+  .b2 {
+    border-radius: 7px !important;
+  }
+
+  .b3 {
+    border-radius: 7px !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .title-programs h2 {
@@ -287,6 +298,15 @@
     font-size: var(--font-18px);
     font-weight: 600;
     margin-bottom: 12px;
+  }
+  .b1 {
+    border-radius: 7px !important;
+  }
+  .b2 {
+    border-radius: 7px !important;
+  }
+  .b3 {
+    border-radius: 7px !important;
   }
 }
 
@@ -329,6 +349,15 @@
     font-weight: 600;
     margin-bottom: 12px;
   }
+  .b1 {
+    border-radius: 7px !important;
+  }
+  .b2 {
+    border-radius: 7px !important;
+  }
+  .b3 {
+    border-radius: 7px !important;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -342,4 +371,18 @@
   .title-programs h2::after {
     margin-top: 16px;
   }
+}
+
+.b1 {
+  border-radius: 7px 0 0 7px;
+  border-right: 1px solid #5d1db162;
+}
+
+.b2 {
+  border-radius: 0px;
+}
+
+.b3 {
+  border-radius: 0 7px 7px 0;
+  border-left: 1px solid #5d1db162;
 }
