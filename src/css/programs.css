@@ -55,7 +55,7 @@
   cursor: pointer;
   margin: 0px;
   transition: 0.3s;
-  background: var(--color-lightblue);
+  background: var(--color-purple);
   color: var(--color-light);
   display: flex;
   align-items: center;
@@ -64,7 +64,7 @@
 }
 
 .tab-links:hover {
-  background: #26c27c;
+  background: #5d1db1;
   color: var(--color-light);
   transition: 0.3s;
 }
@@ -77,11 +77,13 @@
 }
 
 .tab-links span {
-  font-size: 16px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .box-tabs .active {
-  background: var(--color-lightblue);
+  background: #5d1db1;
   color: var(--color-light);
 }
 
@@ -117,8 +119,8 @@
   width: 100%;
   max-height: 250px;
   min-height: 220px;
-  background: #22da8715;
-  border: 1px solid #22da872d;
+  background: #5d1db115;
+  border: 1px solid #5d1db12d;
   border-radius: 7px;
   overflow: hidden;
   display: flex;
@@ -127,13 +129,13 @@
 }
 
 .day-box:hover {
-  background: #22da872d;
-  border: 1px solid #22da8727;
+  background: #5d1db12d;
+  border: 1px solid #5d1db127;
 }
 
 .profile-box {
-  min-width: 250px;
-  border-right: 1px solid #22da872d;
+  min-width: 300px;
+  border-right: 1px solid #5d1db12d;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,10 +146,11 @@
 .profile-box h3 {
   text-transform: uppercase;
   color: var(--color-light);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: "Karla", sans-serif;
+  text-align: center;
 }
 
 .avatar img {
@@ -233,7 +236,7 @@
   .profile-box {
     width: 100%;
     border-right: none;
-    border-bottom: 1px solid #22da872d;
+    border-bottom: 1px solid #5d1db12d;
   }
   .info-box {
     width: 100%;
@@ -268,8 +271,8 @@
   }
   .profile-box {
     width: 100%;
-    border-right: 1px solid #22da872d;
-    border-bottom: 1px solid #22da872d;
+    border-right: none;
+    border-bottom: 1px solid #5d1db12d;
   }
   .info-box {
     width: 100%;
@@ -304,17 +307,13 @@
   }
   .profile-box {
     width: 100%;
-    border-right: 1px solid #22da872d;
+    border-right: none;
+    border-bottom: 1px solid #5d1db12d;
   }
   .avatar img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-  }
-  .profile-box {
-    width: 100%;
-    border-right: 1px solid #22da872d;
-    border-bottom: 1px solid #22da872d;
   }
   .info-box {
     width: 100%;
