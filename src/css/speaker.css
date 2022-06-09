@@ -36,7 +36,7 @@
 
 .info-speaker h2 {
   margin-bottom: 24px;
-  font-size: var(--font-32px);
+  font-size: 28px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--color-light);
@@ -45,7 +45,7 @@
 
 .info-speaker .bio-speaker span {
   text-transform: uppercase;
-  font-size: var(--font-16px);
+  font-size: var(--font-18px);
   font-weight: 600;
   color: var(--color-lightblue);
   letter-spacing: 2px;
