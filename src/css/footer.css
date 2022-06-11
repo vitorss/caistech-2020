@@ -1,6 +1,6 @@
 .footer {
   padding: var(--font-32px) 15px;
-  background: var(--color-secondary);
+  background: var(--color-black);
 }
 .content-footer {
   display: flex;

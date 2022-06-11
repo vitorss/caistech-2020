@@ -1,124 +1,124 @@
 .event-counter {
-    background: var(--color-black);
+  background: var(--color-secondary);
 }
 
 .content-event {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: var(--font-56px) 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: var(--font-56px) 15px;
 }
 
 .event-counter-info h2 {
-    font-size: var(--font-48px);
-    font-weight: 800;
-    text-transform: uppercase;
-    color: var(--color-light);
+  font-size: var(--font-48px);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-light);
 }
 
 .event-counter-info h5 {
-    font-size: var(--font-24px);
-    color: var(--color-gray);
-    padding: 8px 0;
-    font-family: 'Karla', sans-serif;
+  font-size: var(--font-24px);
+  color: var(--color-gray);
+  padding: 8px 0;
+  font-family: "Karla", sans-serif;
 }
 
 .event-counter-info p {
-    display: flex;
-    align-items: center;
-    font-size: var(--font-18px);
-    color: var(--color-gray);
-    font-family: 'Karla', sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-18px);
+  color: var(--color-gray);
+  font-family: "Karla", sans-serif;
 }
 
 .event-counter-info a p i {
-    margin-right: 5px;
-    font-size: var(--font-24px);
+  margin-right: 5px;
+  font-size: var(--font-24px);
 }
 
 .event-counter-info a p {
-    color: rgba(137, 196, 245, 0.979);
+  color: rgba(137, 196, 245, 0.979);
 }
 
 .event-counter-info a p:hover {
-    color: rgba(79, 169, 243, 0.979);
-    text-decoration: none;
+  color: rgba(79, 169, 243, 0.979);
+  text-decoration: none;
 }
 
 .event-counter-timer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .counter-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .counter-box .time {
-    font-size: var(--font-48px);
-    color: var(--color-light);
-    padding: 0 var(--font-32px);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  font-size: var(--font-48px);
+  color: var(--color-light);
+  padding: 0 var(--font-32px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .counter-box .time span {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .counter-box .text {
-    font-size: var(--font-16px);
-    font-weight: 200;
-    color: var(--color-light);
+  font-size: var(--font-16px);
+  font-weight: 200;
+  color: var(--color-light);
 }
 
 @media screen and (max-width: 576px) {
-    .content-event {
-        display: block;
-    }
-    .event-counter-timer {
-        justify-content: space-between;
-        margin: 0;
-        padding: 0;
-    }
-    .event-counter-info h2 {
-        font-size: var(--font-32px);
-    }
-    .counter-box .time {
-        padding: 0px;
-        font-size: 28px;
-    }
-    .counter-box .text {
-        font-size: 14px;
-        text-align: left;
-    }
-    .counter-box {
-        margin-top: var(--font-40px);
-    }
+  .content-event {
+    display: block;
+  }
+  .event-counter-timer {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  .event-counter-info h2 {
+    font-size: var(--font-32px);
+  }
+  .counter-box .time {
+    padding: 0px;
+    font-size: 28px;
+  }
+  .counter-box .text {
+    font-size: 14px;
+    text-align: left;
+  }
+  .counter-box {
+    margin-top: var(--font-40px);
+  }
 }
 
-@media screen and (max-width: 768px) and (max-width: 992px){
-    .counter-box {
-        margin-top: var(--font-40px);
-    }
-    .content-event {
-        justify-content: space-between;
-    }
-    .event-counter-timer {
-        width: 100%;
-        justify-content: space-between;
-        margin: 0;
-        padding: 0;
-    }
+@media screen and (max-width: 768px) and (max-width: 992px) {
+  .counter-box {
+    margin-top: var(--font-40px);
+  }
+  .content-event {
+    justify-content: space-between;
+  }
+  .event-counter-timer {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
 }
 
-@media screen and (max-width: 992px){
-    .counter-box {
-        margin-top: var(--font-40px);
-    }
+@media screen and (max-width: 992px) {
+  .counter-box {
+    margin-top: var(--font-40px);
+  }
 }

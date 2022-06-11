@@ -1,6 +1,6 @@
 .subfooter {
   padding: var(--font-96px) 15px;
-  background: var(--color-black);
+  background: var(--color-secondary);
 }
 
 .content-subfooter {
