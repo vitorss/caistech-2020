@@ -57,6 +57,16 @@
   display: none;
 }
 
+.menu-toggle i {
+  font-size: 32px;
+  color: var(--color-light);
+}
+
+.menu-toggle i:hover {
+  font-size: 32px;
+  color: var(--color-purple);
+}
+
 .menu-toggle div {
   width: var(--font-32px);
   height: 2px;
@@ -80,7 +90,6 @@
   }
   .navbar-menu ul li .btn-ticket:hover {
     color: var(--color-light);
-    background: #ce0063;
   }
   .menu-toggle {
     cursor: pointer;

@@ -38,6 +38,7 @@ body {
 
 #btn-fixed {
   position: fixed;
+  z-index: 999;
   bottom: 0px;
   right: 0px;
   padding: 8px 10px;

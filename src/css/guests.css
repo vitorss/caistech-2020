@@ -75,6 +75,9 @@
   .card-guests {
     margin: 10px 0;
   }
+  .card-guests .guests-info {
+    min-height: auto !important;
+  }
   .card-content-box h3 {
     font-size: var(--font-24px);
   }
