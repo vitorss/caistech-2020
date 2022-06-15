@@ -7,9 +7,18 @@
   text-align: center;
 }
 
-.title-realization h2 {
+.content-sponsors h2 {
+  font-size: var(--font-32px);
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-light);
+}
+
+/* .title-realization h2 {
   font-size: var(--font-48px);
   font-weight: 800;
+  text-transform: uppercase;
   color: var(--color-light);
 }
 
@@ -23,7 +32,7 @@
   font-size: var(--font-48px);
   font-weight: 800;
   color: var(--color-light);
-}
+} */
 
 .box-realization {
   display: flex;
