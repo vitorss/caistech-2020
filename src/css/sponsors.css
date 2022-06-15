@@ -78,7 +78,14 @@
   .content-sponsors {
     padding: 40px 8px;
   }
-  .title-realization h2 {
+  .content-sponsors h2 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-light);
+  }
+  /* .title-realization h2 {
     font-size: var(--font-32px);
   }
   .title-sponsors h2 {
@@ -86,5 +93,5 @@
   }
   .title-support h2 {
     font-size: var(--font-32px);
-  }
+  } */
 }
