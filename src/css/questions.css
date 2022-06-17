@@ -84,7 +84,7 @@
   padding: var(--font-16px) 26px;
   -webkit-animation-name: fadeEffect;
   animation-name: fadeEffect;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   font-family: "Karla", sans-serif;
 }
 
