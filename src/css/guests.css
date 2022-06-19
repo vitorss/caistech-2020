@@ -34,7 +34,7 @@
   margin-top: var(--font-32px);
 }
 
-.card-img-box {
+.card-guests .card-img-box {
   position: relative;
   overflow: hidden;
   border-radius: 0px;
@@ -42,7 +42,7 @@
   border-radius: 0px !important;
 }
 
-.card-img-box img {
+.card-guests .card-img-box img {
   border-radius: 0px;
   width: 100%;
   height: 100%;
@@ -157,7 +157,7 @@
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--color-lightblue);
+  color: var(--color-black);
   letter-spacing: 1px;
   transition: all 0.3s;
 
