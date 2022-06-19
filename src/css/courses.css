@@ -241,6 +241,21 @@
   color: var(--color-light);
 }
 
+.card-courses .course-info span {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  border-radius: 7px;
+  padding: 5px 12px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #591ca8;
+  color: var(--color-lightblue);
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
 /* .card-courses:hover .course-info p {
   opacity: 1;
   transition-delay: 0.3s;

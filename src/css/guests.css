@@ -181,3 +181,7 @@
   opacity: 1;
   transition-delay: 0.3s;
 } */
+
+.card-guests:hover {
+  transform: scale(1.05);
+}
