@@ -193,6 +193,10 @@
   overflow: hidden;
 } */
 
+.card-courses:hover {
+  transform: scale(1.05);
+}
+
 .card-courses .course-info h3 {
   margin: 0;
   padding: 10px 16px;
