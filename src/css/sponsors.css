@@ -56,11 +56,13 @@
 .img-sponsors {
   display: flex;
   align-items: center;
+  gap: 32px;
   padding-top: var(--font-48px);
 }
 
-.img-sponsors img {
-  padding-right: var(--font-32px);
+.img-sponsors a img {
+  width: 300px;
+  border-radius: 7px;
 }
 
 .box-support {
@@ -79,7 +81,7 @@
     padding: 40px 8px;
   }
   .content-sponsors h2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
