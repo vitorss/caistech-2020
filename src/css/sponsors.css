@@ -81,19 +81,17 @@
     padding: 40px 8px;
   }
   .content-sponsors h2 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--color-light);
   }
-  /* .title-realization h2 {
-    font-size: var(--font-32px);
+  .img-sponsors {
+    display: grid;
+    grid-gap: 60px;
   }
-  .title-sponsors h2 {
-    font-size: var(--font-32px);
+  .img-sponsors a img {
+    width: 200px;
   }
-  .title-support h2 {
-    font-size: var(--font-32px);
-  } */
 }
